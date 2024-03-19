@@ -1,0 +1,10 @@
+C:\Users\Ray\source\repos\ApplicationTracker\ApplicationTracker\obj\Debug\net7.0-windows\ApplicationTracker.csproj.AssemblyReference.cache
+C:\Users\Ray\source\repos\ApplicationTracker\ApplicationTracker\obj\Debug\net7.0-windows\MainWindow.baml
+C:\Users\Ray\source\repos\ApplicationTracker\ApplicationTracker\obj\Debug\net7.0-windows\MainWindow.g.cs
+C:\Users\Ray\source\repos\ApplicationTracker\ApplicationTracker\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\Ray\source\repos\ApplicationTracker\ApplicationTracker\obj\Debug\net7.0-windows\ApplicationTracker_MarkupCompile.cache
+C:\Users\Ray\source\repos\ApplicationTracker\ApplicationTracker\obj\Debug\net7.0-windows\ApplicationTracker.g.resources
+C:\Users\Ray\source\repos\ApplicationTracker\ApplicationTracker\obj\Debug\net7.0-windows\ApplicationTracker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ray\source\repos\ApplicationTracker\ApplicationTracker\obj\Debug\net7.0-windows\ApplicationTracker.AssemblyInfoInputs.cache
+C:\Users\Ray\source\repos\ApplicationTracker\ApplicationTracker\obj\Debug\net7.0-windows\ApplicationTracker.AssemblyInfo.cs
+C:\Users\Ray\source\repos\ApplicationTracker\ApplicationTracker\obj\Debug\net7.0-windows\ApplicationTracker.csproj.CoreCompileInputs.cache
