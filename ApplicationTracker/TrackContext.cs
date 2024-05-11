@@ -11,6 +11,10 @@ namespace ApplicationTracker
     internal class TrackContext : DbContext
     {
         public DbSet<MyProcess> Processes { get; set; }
+        public DbSet<DailyTotal> DailyTotals { get; set; }
+        public DbSet<WeeklyTotal> WeeklyTotals { get; set; }
+        public DbSet<MonthlyTotal> MonthlyTotals { get; set; }
+        public DbSet<YearlyTotal> YearlyTotals { get; set; }
 
         public TrackContext()
         {

@@ -12,6 +12,12 @@ namespace ApplicationTracker.Models
         public string ProcessName { get; set; }
         //public int ProcessId { get; set; }
         public TimeSpan ProcessTime { get; set; }
-        public DateTime DateStarted { get; set; }
+
+        public DateTime ProcessDate { get; set; } // This property will store the date the process was run
+
+        public MyProcess()
+        {
+            ProcessDate = DateTime.Now;
+        }
     }
 }
