@@ -10,6 +10,7 @@ namespace ApplicationTracker
 {
     internal class TrackContext : DbContext
     {
+        //should these types be MyProcess types or their own total types?
         public DbSet<MyProcess> Processes { get; set; }
         public DbSet<DailyTotal> DailyTotals { get; set; }
         public DbSet<WeeklyTotal> WeeklyTotals { get; set; }
@@ -27,5 +28,25 @@ namespace ApplicationTracker
                    "Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = TrackDatabase"
                    );
         }
+
+        /*
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<DailyTotal>()
+                .HasOne(d => d.WeeklyTotal)
+                .WithMany(w => w.DailyTotals)
+                .HasForeignKey(d => d.WeeklyTotalId);
+
+            modelBuilder.Entity<DailyTotal>()
+                .Property(d => d.ProcessName)
+                .IsRequired();
+
+            modelBuilder.Entity<WeeklyTotal>()
+                .Property(d => d.ProcessName)
+                .IsRequired();
+        }
+        */
     }
 }

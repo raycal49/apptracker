@@ -22,6 +22,7 @@ using System.Globalization;
 using System.ComponentModel;
 using Calendar = System.Globalization.Calendar;
 using System.Timers;
+using System.Configuration;
 
 namespace ApplicationTracker
 {
@@ -29,7 +30,6 @@ namespace ApplicationTracker
     public partial class MainWindow : Window
     {
         internal List<MyProcess> runningProcesses = new List<MyProcess>();
-        Process[] processes = Process.GetProcesses();
 
         public MainWindow()
         {
@@ -56,6 +56,7 @@ namespace ApplicationTracker
 
             void timer_Tick(object sender, EventArgs e)
             {
+                Process[] processes = Process.GetProcesses();
 
                 // Grab running processes and put them in our runningProcesses list, according to our conditionals.
                 foreach (Process item in processes)
@@ -66,7 +67,6 @@ namespace ApplicationTracker
                         runningProcesses.Add(new MyProcess() { ProcessName = item.ProcessName });
                     }
 
-                    //ProcessInfo.Items.Refresh();
                 }
 
                 var idleTime = IdleTimeDetector.GetIdleTimeInfo();
@@ -87,16 +87,16 @@ namespace ApplicationTracker
 
                 }
             }
+
             ProcessInfo.ItemsSource = runningProcesses;
-            
-            //DailyTimer();
 
             // Add to Daily Total every 5 minutes.
             void DailyTimer()
             {
                 System.Timers.Timer timer = new System.Timers.Timer();
 
-                timer = new System.Timers.Timer(300000);
+                //timer = new System.Timers.Timer(300000);
+                timer = new System.Timers.Timer(15000);
                 timer.Elapsed += OnTimedEvent;
                 timer.AutoReset = true;
                 timer.Enabled = true;
@@ -105,10 +105,33 @@ namespace ApplicationTracker
             void OnTimedEvent(Object source, ElapsedEventArgs e)
             {
                 DailyCount();
-                Console.WriteLine("The Elapsed event was raised at {0}", e.SignalTime);
             }
-            
 
+            void DailyCount()
+            {
+                using var _context = new TrackContext();
+
+                DateTime today = DateTime.Today;
+
+                foreach (MyProcess proc in runningProcesses)
+                {
+                    
+                    var dbProcess = _context.DailyTotals.FirstOrDefault(p => p.ProcessName == proc.ProcessName && p.ProcessDate.Date == proc.ProcessDate.Date);
+
+                    if (dbProcess != null)
+                    {
+                        dbProcess.TotalTime += (proc.ProcessTime - proc.PreviousProcessTime);
+                    }
+                    else if (dbProcess == null && proc.ProcessDate.Date == today)
+                    {
+                        _context.DailyTotals.Add(new DailyTotal() { ProcessName = proc.ProcessName, TotalTime = proc.ProcessTime, ProcessDate = proc.ProcessDate.Date });
+                    }
+
+                    proc.PreviousProcessTime = proc.ProcessTime;
+                }
+
+                _context.SaveChanges();
+            }
 
         }
 
@@ -137,37 +160,6 @@ namespace ApplicationTracker
             }
         }
 
-        // Need to execute DailyCount upon exiting, too
-        void DailyCount()
-        {
-            using var _context = new TrackContext();
-
-            DateTime today = DateTime.Today;
-
-            foreach (var proc in runningProcesses)
-            {
-                // dbProcess is either NULL or it is the process we have in our database with the desired process name
-                // this is the daily application tracking session. We will store all instances of our "local" application tracking into this daily.
-                var dbProcess = _context.DailyTotals.FirstOrDefault(p => p.ProcessName == proc.ProcessName && proc.ProcessDate.Date == today);
-
-                // If we already have that specific process in the database, just increase its time by the time in runningProcesses.
-                if (dbProcess != null)
-                {
-                    // Need to modify how we store daily time as currently it doesn't work correctly.
-                    dbProcess.TotalTime += proc.ProcessTime;
-                }
-                else
-                {
-                    // If process does not exist, add it.
-                    _context.DailyTotals.Add(new DailyTotal () { ProcessName = proc.ProcessName, TotalTime = proc.ProcessTime, ProcessDate = proc.ProcessDate});
-                }
-            }
-
-            _context.SaveChanges();
-
-
-        }
-
         void SaveChanges()
         {
             using var _context = new TrackContext();
@@ -178,7 +170,7 @@ namespace ApplicationTracker
             //int year = today.Year;
 
             // Determine current session's usage. Definitely need to extract to a function
-            foreach (var proc in runningProcesses)
+            foreach (MyProcess proc in runningProcesses)
             {
                 // dbProcess is either NULL or it is the process we have in our database with the desired process name
                 // this is the "local" session application tracking. We will reset the local session every time the program closes.
@@ -196,8 +188,6 @@ namespace ApplicationTracker
                     _context.Processes.Add(proc);
                 }
             }
-
-
 
             _context.SaveChanges();
         }

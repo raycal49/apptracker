@@ -10,10 +10,13 @@ namespace ApplicationTracker.Models
     internal class DailyTotal
     {
         public int Id { get; set; }
-
-        public string ProcessName { get; set; } //fk
-        public TimeSpan TotalTime { get; set; } //will be extracted from process time within MyProcesses table (which is local session activity duration) assuming ProcessDate matches
+        public string ProcessName { get; set; }
+        public TimeSpan TotalTime { get; set; }
         public DateTime ProcessDate { get; set; }
+
+        //  foreign key stuff
+        //public int WeeklyTotalId { get; set; }
+        //public WeeklyTotal WeeklyTotal { get; set; }
 
     }
     internal class WeeklyTotal
@@ -23,6 +26,9 @@ namespace ApplicationTracker.Models
         public TimeSpan TotalTime { get; set; }
         public int Week { get; set; }
         public int Year { get; set; }
+
+
+        //public ICollection<DailyTotal> DailyTotals { get; set; }
 
     }
     internal class MonthlyTotal
