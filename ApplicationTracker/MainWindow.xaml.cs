@@ -29,7 +29,7 @@ namespace ApplicationTracker
 
     public partial class MainWindow : Window
     {
-        internal List<MyProcess> runningProcesses = new List<MyProcess>();
+        internal List<MyProcess> currentMyProcesses = new List<MyProcess>();
 
         public MainWindow()
         {
@@ -46,51 +46,31 @@ namespace ApplicationTracker
                 "updatechecker",
             };
 
-            // Definitely need to extract everything to individual functions and whatnot.
+            ProcessInfo.ItemsSource = currentMyProcesses;
 
-            DispatcherTimer timer = new DispatcherTimer();
-            timer.Tick += new EventHandler(timer_Tick);
-            timer.Interval = TimeSpan.FromSeconds(1);
-            timer.Start();
+            ProcTimer();
             DailyTimer();
 
-            void timer_Tick(object sender, EventArgs e)
+            void ProcTimer()
             {
-                Process[] processes = Process.GetProcesses();
+                DispatcherTimer timer = new DispatcherTimer();
+                timer.Tick += new EventHandler(timer_Tick);
+                timer.Interval = TimeSpan.FromSeconds(1);
+                timer.Start();
 
-                // Grab running processes and put them in our runningProcesses list, according to our conditionals.
-                foreach (Process item in processes)
+                void timer_Tick(object sender, EventArgs e)
                 {
+                    GetRunningProcs();
 
-                    if (item.MainWindowHandle != IntPtr.Zero && !exclusionList.Contains(item.ProcessName) && !runningProcesses.Any(p => p.ProcessName == item.ProcessName))
+                    var idleTime = IdleTimeDetector.GetIdleTimeInfo();
+
+                    if (idleTime.IdleTime.TotalMinutes <= 1)
                     {
-                        runningProcesses.Add(new MyProcess() { ProcessName = item.ProcessName });
+                        UpdateRunningProcs(currentMyProcesses, timer.Interval);
                     }
-
-                }
-
-                var idleTime = IdleTimeDetector.GetIdleTimeInfo();
-
-                if (idleTime.IdleTime.TotalMinutes <= 1)
-                {
-                    foreach (MyProcess proc in runningProcesses)
-                    {
-
-                        if (ProcessUtilities.IsActive(proc.ProcessName))
-                        {
-                            proc.ProcessTime += timer.Interval;
-                            break;
-                        }
-
-                        ProcessInfo.Items.Refresh();
-                    }
-
                 }
             }
 
-            ProcessInfo.ItemsSource = runningProcesses;
-
-            // Add to Daily Total every 5 minutes.
             void DailyTimer()
             {
                 System.Timers.Timer timer = new System.Timers.Timer();
@@ -101,6 +81,41 @@ namespace ApplicationTracker
                 timer.AutoReset = true;
                 timer.Enabled = true;
             }
+
+            void GetRunningProcs()
+            {
+                Process[] processes = Process.GetProcesses();
+
+                foreach (Process item in processes)
+                {
+
+                    if (item.MainWindowHandle != IntPtr.Zero
+                                              && !exclusionList.Contains(item.ProcessName)
+                                              && !currentMyProcesses.Any(p => p.ProcessName == item.ProcessName))
+                    {
+                        currentMyProcesses.Add(new MyProcess() { ProcessName = item.ProcessName });
+                    }
+
+                }
+            }
+
+
+            void UpdateRunningProcs(List<MyProcess> processess, TimeSpan interval)
+            {
+                foreach (MyProcess proc in currentMyProcesses)
+                {
+
+                    if (ProcessUtilities.IsActive(proc.ProcessName))
+                    {
+                        proc.ProcessTime += interval;
+                        break;
+                    }
+
+                    ProcessInfo.Items.Refresh();
+                }
+            }
+
+            
 
             void OnTimedEvent(Object source, ElapsedEventArgs e)
             {
@@ -113,9 +128,8 @@ namespace ApplicationTracker
 
                 DateTime today = DateTime.Today;
 
-                foreach (MyProcess proc in runningProcesses)
+                foreach (MyProcess proc in currentMyProcesses)
                 {
-                    
                     var dbProcess = _context.DailyTotals.FirstOrDefault(p => p.ProcessName == proc.ProcessName && p.ProcessDate.Date == proc.ProcessDate.Date);
 
                     if (dbProcess != null)
@@ -124,7 +138,7 @@ namespace ApplicationTracker
                     }
                     else if (dbProcess == null && proc.ProcessDate.Date == today)
                     {
-                        _context.DailyTotals.Add(new DailyTotal() { ProcessName = proc.ProcessName, TotalTime = proc.ProcessTime, ProcessDate = proc.ProcessDate.Date });
+                        _context.DailyTotals.Add(new DailyTotal() { ProcessName = proc.ProcessName, TotalTime = proc.ProcessTime, ProcessDate = proc.ProcessDate });
                     }
 
                     proc.PreviousProcessTime = proc.ProcessTime;
@@ -170,7 +184,7 @@ namespace ApplicationTracker
             //int year = today.Year;
 
             // Determine current session's usage. Definitely need to extract to a function
-            foreach (MyProcess proc in runningProcesses)
+            foreach (MyProcess proc in currentMyProcesses)
             {
                 // dbProcess is either NULL or it is the process we have in our database with the desired process name
                 // this is the "local" session application tracking. We will reset the local session every time the program closes.

@@ -21,7 +21,6 @@ namespace ApplicationTracker
         {
             Database.EnsureCreated();
         }
-
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(
