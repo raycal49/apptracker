@@ -12,11 +12,17 @@
         <!-- <local:TimeSpanToWidthConverter x:Key="TimeSpanToWidthConverter"/>-->
 
     </Window.Resources>
+    
+    <!-- this is apparently preferred way of doing this. configure this later
+    <Window.DataContext>
+        <local:MainViewModel/>
+    </Window.DataContext>
+    -->
 
     <Grid>
         <TabControl>
             <TabItem Header="Current Session's Usage">
-                <ListView Margin="10" Name="ProcessInfo">
+                <ListView Margin="10" Name="ProcessInfo" >
                     <ListView.View>
                         <GridView>
                             <GridViewColumn Header="Name" Width="120" DisplayMemberBinding="{Binding ProcessName}" />

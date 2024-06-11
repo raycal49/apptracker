@@ -23,13 +23,16 @@ using System.ComponentModel;
 using Calendar = System.Globalization.Calendar;
 using System.Timers;
 using System.Configuration;
+using System.Collections.ObjectModel;
+using ApplicationTracker.View_Models;
 
 namespace ApplicationTracker
 {
 
     public partial class MainWindow : Window
     {
-        internal List<MyProcess> currentMyProcesses = new List<MyProcess>();
+        //internal ObservableCollection<MyProcess> currentMyProcesses = new ObservableCollection<MyProcess>();
+        MyProcessViewModel processVM = new MyProcessViewModel(new ObservableCollection<MyProcess>());
 
         public MainWindow()
         {
@@ -41,12 +44,14 @@ namespace ApplicationTracker
                 "textinputhost",
                 "ApplicationFrameHost",
                 "svchost",
-                "devenv",
+                //"devenv",
                 "TextInputHost",
                 "updatechecker",
             };
 
-            ProcessInfo.ItemsSource = currentMyProcesses;
+            DataContext = processVM;
+            //ProcessInfo.ItemsSource = processVM._myprocess;
+            ProcessInfo.ItemsSource = processVM.MyProcess;
 
             ProcTimer();
             DailyTimer();
@@ -66,7 +71,7 @@ namespace ApplicationTracker
 
                     if (idleTime.IdleTime.TotalMinutes <= 1)
                     {
-                        UpdateRunningProcs(currentMyProcesses, timer.Interval);
+                        UpdateRunningProcs(processVM.MyProcess, timer.Interval);
                     }
                 }
             }
@@ -91,27 +96,23 @@ namespace ApplicationTracker
 
                     if (item.MainWindowHandle != IntPtr.Zero
                                               && !exclusionList.Contains(item.ProcessName)
-                                              && !currentMyProcesses.Any(p => p.ProcessName == item.ProcessName))
+                                              && !processVM.MyProcess.Any(p => p.ProcessName == item.ProcessName))
                     {
-                        currentMyProcesses.Add(new MyProcess() { ProcessName = item.ProcessName });
+                        processVM.MyProcess.Add(new MyProcess() { ProcessName = item.ProcessName });
                     }
 
                 }
             }
 
-
-            void UpdateRunningProcs(List<MyProcess> processess, TimeSpan interval)
+            void UpdateRunningProcs(ObservableCollection<MyProcess> processes, TimeSpan interval)
             {
-                foreach (MyProcess proc in currentMyProcesses)
+                foreach (MyProcess proc in processVM.MyProcess)
                 {
-
                     if (ProcessUtilities.IsActive(proc.ProcessName))
                     {
                         proc.ProcessTime += interval;
                         break;
                     }
-
-                    ProcessInfo.Items.Refresh();
                 }
             }
 
@@ -128,7 +129,7 @@ namespace ApplicationTracker
 
                 DateTime today = DateTime.Today;
 
-                foreach (MyProcess proc in currentMyProcesses)
+                foreach (MyProcess proc in processVM.MyProcess)
                 {
                     var dbProcess = _context.DailyTotals.FirstOrDefault(p => p.ProcessName == proc.ProcessName && p.ProcessDate.Date == proc.ProcessDate.Date);
 
@@ -184,7 +185,7 @@ namespace ApplicationTracker
             //int year = today.Year;
 
             // Determine current session's usage. Definitely need to extract to a function
-            foreach (MyProcess proc in currentMyProcesses)
+            foreach (MyProcess proc in processVM.MyProcess)
             {
                 // dbProcess is either NULL or it is the process we have in our database with the desired process name
                 // this is the "local" session application tracking. We will reset the local session every time the program closes.

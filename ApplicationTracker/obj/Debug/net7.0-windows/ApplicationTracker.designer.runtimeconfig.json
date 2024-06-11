@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\Ray\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Ray\\.nuget\\packages",
+      "C:\\Users\\shado\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\shado\\.nuget\\packages",
       "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
     ],
     "configProperties": {
