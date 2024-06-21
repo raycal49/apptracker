@@ -14,6 +14,8 @@ namespace ApplicationTracker.Models
         public TimeSpan TotalTime { get; set; }
         public DateTime ProcessDate { get; set; }
 
+        //Key for DailyTotal should really be ProcessName + ProcessDate
+
         //  foreign key stuff
         //public int WeeklyTotalId { get; set; }
         //public WeeklyTotal WeeklyTotal { get; set; }

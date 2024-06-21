@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Data;
 
+// Dispose of IntPtr peoperly.
 namespace DetectLibrary
 {
     public static class ProcessUtilities

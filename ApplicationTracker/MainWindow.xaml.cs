@@ -28,16 +28,15 @@ using ApplicationTracker.View_Models;
 
 namespace ApplicationTracker
 {
-
     public partial class MainWindow : Window
     {
         //internal ObservableCollection<MyProcess> currentMyProcesses = new ObservableCollection<MyProcess>();
-        MyProcessViewModel processVM = new MyProcessViewModel(new ObservableCollection<MyProcess>());
+        //MyProcessViewModel processVM = new MyProcessViewModel(new ObservableCollection<MyProcess>());
 
         public MainWindow()
         {
             InitializeComponent();
-
+            /*
             HashSet<string> exclusionList = new HashSet<string>
             {
                 //"explorer",
@@ -48,14 +47,16 @@ namespace ApplicationTracker
                 "TextInputHost",
                 "updatechecker",
             };
+            */
 
-            DataContext = processVM;
+            //DataContext = processVM;
             //ProcessInfo.ItemsSource = processVM._myprocess;
-            ProcessInfo.ItemsSource = processVM.MyProcess;
+            //ProcessInfo.ItemsSource = processVM.MyProcess;
 
-            ProcTimer();
-            DailyTimer();
+            //ProcTimer();
+            //DailyTimer();
 
+            /*
             void ProcTimer()
             {
                 DispatcherTimer timer = new DispatcherTimer();
@@ -75,7 +76,8 @@ namespace ApplicationTracker
                     }
                 }
             }
-
+            */
+            /*
             void DailyTimer()
             {
                 System.Timers.Timer timer = new System.Timers.Timer();
@@ -86,7 +88,8 @@ namespace ApplicationTracker
                 timer.AutoReset = true;
                 timer.Enabled = true;
             }
-
+            */
+            /*
             void GetRunningProcs()
             {
                 Process[] processes = Process.GetProcesses();
@@ -103,7 +106,8 @@ namespace ApplicationTracker
 
                 }
             }
-
+            */
+            /*
             void UpdateRunningProcs(ObservableCollection<MyProcess> processes, TimeSpan interval)
             {
                 foreach (MyProcess proc in processVM.MyProcess)
@@ -115,9 +119,9 @@ namespace ApplicationTracker
                     }
                 }
             }
-
+            */
             
-
+            /*
             void OnTimedEvent(Object source, ElapsedEventArgs e)
             {
                 DailyCount();
@@ -147,9 +151,10 @@ namespace ApplicationTracker
 
                 _context.SaveChanges();
             }
-
+            */
         }
-
+        
+        // reinstate the SaveChanges() function at some point.
         void MainWindow_Closing(object sender, CancelEventArgs e)
         {
             MessageBoxResult result = MessageBox.Show("Do you want to save the process data before exiting?",
@@ -160,7 +165,8 @@ namespace ApplicationTracker
             {
                 if (result == MessageBoxResult.Yes)
                 {
-                    SaveChanges();
+                    //SaveChanges();
+                    Console.WriteLine("Hi");
                 }
                 else if (result == MessageBoxResult.Cancel)
                 {
@@ -174,7 +180,8 @@ namespace ApplicationTracker
                 MessageBox.Show($"An error occurred: {ex.Message}");
             }
         }
-
+        
+        /*
         void SaveChanges()
         {
             using var _context = new TrackContext();
@@ -206,7 +213,7 @@ namespace ApplicationTracker
 
             _context.SaveChanges();
         }
-
+        */
     }
 
 }

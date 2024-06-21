@@ -22,7 +22,7 @@
     <Grid>
         <TabControl>
             <TabItem Header="Current Session's Usage">
-                <ListView Margin="10" Name="ProcessInfo" >
+                <ListView Margin="10" Name="ProcessInfo" ItemsSource="{Binding MyProcessCollection}" >
                     <ListView.View>
                         <GridView>
                             <GridViewColumn Header="Name" Width="120" DisplayMemberBinding="{Binding ProcessName}" />
@@ -31,16 +31,8 @@
                     </ListView.View>
                 </ListView>
             </TabItem>
-
             <TabItem Header="Overall Usage">
-
-
-
-
-
-
             </TabItem>
-
         </TabControl>
     </Grid>
 
