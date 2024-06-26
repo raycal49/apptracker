@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ApplicationTracker.Models
 {
-    internal class DailyTotal
+    public class DailyTotal
     {
         public int Id { get; set; }
         public string ProcessName { get; set; }

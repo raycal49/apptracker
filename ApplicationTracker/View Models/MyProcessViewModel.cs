@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Timers;
 using System.Windows.Threading;
 using ApplicationTracker.Models;
+using ApplicationTracker.Repositories;
 using DetectLibrary;
 
 namespace ApplicationTracker.View_Models
@@ -88,13 +89,14 @@ namespace ApplicationTracker.View_Models
 
         public void DailyCount(Object source, ElapsedEventArgs e, ObservableCollection<MyProcess> runningProcs)
         {
-            using var _context = new TrackContext();
+            IUnitOfWork uow = new UnitOfWork(new TrackContext());
+            //using var _context = new TrackContext();
 
             DateTime today = DateTime.Today;
 
             foreach (MyProcess proc in runningProcs)
             {
-                var dbProcess = _context.DailyTotals.FirstOrDefault(p => p.ProcessName == proc.ProcessName && p.ProcessDate.Date == proc.ProcessDate.Date);
+                var dbProcess = uow.DailyTotals.FindFirstOrDef(p => p.ProcessName == proc.ProcessName && p.ProcessDate.Date == proc.ProcessDate.Date);
 
                 if (dbProcess != null)
                 {
@@ -102,13 +104,13 @@ namespace ApplicationTracker.View_Models
                 }
                 else if (dbProcess == null && proc.ProcessDate.Date == today)
                 {
-                    _context.DailyTotals.Add(new DailyTotal() { ProcessName = proc.ProcessName, TotalTime = proc.ProcessTime, ProcessDate = proc.ProcessDate });
+                    uow.DailyTotals.Add(new DailyTotal() { ProcessName = proc.ProcessName, TotalTime = proc.ProcessTime, ProcessDate = proc.ProcessDate });
                 }
 
                 proc.PreviousProcessTime = proc.ProcessTime;
             }
 
-            _context.SaveChanges();
+            uow.Complete();
         }
     }
 }
