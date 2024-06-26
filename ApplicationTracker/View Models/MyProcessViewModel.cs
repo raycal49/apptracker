@@ -32,7 +32,7 @@ namespace ApplicationTracker.View_Models
             timer.Interval = TimeSpan.FromSeconds(1);
             timer.Start();
 
-            void timer_Tick(object sender, EventArgs e)
+            void timer_Tick(object? sender, EventArgs e)
             {
                 // Refactor GetRunningProcs to take in Process[].
                 GetRunningProcs(exclusionList, runningProcs);
@@ -87,7 +87,7 @@ namespace ApplicationTracker.View_Models
             timer.Enabled = true;
         }
 
-        public void DailyCount(Object source, ElapsedEventArgs e, ObservableCollection<MyProcess> runningProcs)
+        public void DailyCount(Object? source, ElapsedEventArgs e, ObservableCollection<MyProcess> runningProcs)
         {
             IUnitOfWork uow = new UnitOfWork(new TrackContext());
             //using var _context = new TrackContext();
