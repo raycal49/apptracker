@@ -13,7 +13,7 @@ namespace ApplicationTracker.Models
         public int Id { get; set; }
         public string ProcessName { get; set; }
 
-        public event PropertyChangedEventHandler PropertyChanged;
+        public event PropertyChangedEventHandler? PropertyChanged;
 
         public TimeSpan _processtime;
 

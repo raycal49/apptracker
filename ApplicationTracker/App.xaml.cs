@@ -6,6 +6,7 @@ using System.Configuration;
 using System.Data;
 using System.Diagnostics;
 using System.Windows;
+using System.Windows.Threading;
 
 namespace ApplicationTimerApp
 {
@@ -37,8 +38,19 @@ namespace ApplicationTimerApp
             };
             MainWindow.Show();
 
-            processVM.ProcTimer(exclusionList, processVM.MyProcessCollection);
-            processVM.DailyTimer(processVM.MyProcessCollection);
+            DispatcherTimer pTimer = new DispatcherTimer();
+            pTimer.Tick += (s, e) => processVM.ProcTimer(exclusionList, myProcesses);
+            pTimer.Interval = TimeSpan.FromSeconds(1);
+            pTimer.Start();
+
+            //processVM.ProcTimer(exclusionList, processVM.MyProcessCollection);
+
+            System.Timers.Timer dayTimer = new System.Timers.Timer(15000);
+            dayTimer.Elapsed += (s, e) => processVM.DailyCount(myProcesses);
+            dayTimer.AutoReset = true;
+            dayTimer.Enabled = true;
+
+            //processVM.DailyTimer(processVM.MyProcessCollection);
 
             base.OnStartup(e);
         }

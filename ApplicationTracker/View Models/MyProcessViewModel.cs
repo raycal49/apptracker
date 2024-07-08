@@ -27,28 +27,19 @@ namespace ApplicationTracker.View_Models
 
         public void ProcTimer(HashSet<string> exclusionList, ObservableCollection<MyProcess> runningProcs)
         {
-            DispatcherTimer timer = new DispatcherTimer();
-            timer.Tick += new EventHandler(timer_Tick);
-            timer.Interval = TimeSpan.FromSeconds(1);
-            timer.Start();
-
-            void timer_Tick(object? sender, EventArgs e)
-            {
-                // Refactor GetRunningProcs to take in Process[].
                 GetRunningProcs(exclusionList, runningProcs);
 
                 var idleTime = IdleTimeDetector.GetIdleTimeInfo();
 
                 if (idleTime.IdleTime.TotalMinutes <= 1)
                 {
-                    UpdateRunningProcs(runningProcs, timer.Interval);
+                    UpdateRunningProcs(runningProcs);
                 }
-            }
+            
         }
 
         public void GetRunningProcs(HashSet<string> exclusionList, ObservableCollection<MyProcess> runningProcs)
         {
-            // Pass this through the function
             Process[] processes = Process.GetProcesses();
 
             foreach (Process item in processes)
@@ -64,30 +55,20 @@ namespace ApplicationTracker.View_Models
             }
         }
 
-        public void UpdateRunningProcs(ObservableCollection<MyProcess> runningProcs, TimeSpan interval)
+        public void UpdateRunningProcs(ObservableCollection<MyProcess> runningProcs)
         {
             foreach (MyProcess proc in runningProcs)
             {
                 if (ProcessUtilities.IsActive(proc.ProcessName))
                 {
+                    TimeSpan interval = TimeSpan.FromSeconds(1);
                     proc.ProcessTime += interval;
                     break;
                 }
             }
         }
 
-        public void DailyTimer(ObservableCollection<MyProcess> runningProcs)
-        {
-            System.Timers.Timer timer = new System.Timers.Timer();
-
-            //timer = new System.Timers.Timer(300000);
-            timer = new System.Timers.Timer(15000);
-            timer.Elapsed += (sender, e) => DailyCount(sender, e, runningProcs);
-            timer.AutoReset = true;
-            timer.Enabled = true;
-        }
-
-        public void DailyCount(Object? source, ElapsedEventArgs e, ObservableCollection<MyProcess> runningProcs)
+        public void DailyCount(ObservableCollection<MyProcess> runningProcs)
         {
             IUnitOfWork uow = new UnitOfWork(new TrackContext());
             //using var _context = new TrackContext();
