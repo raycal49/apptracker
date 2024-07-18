@@ -17,9 +17,10 @@ namespace ApplicationTimerApp
     {
         protected override void OnStartup(StartupEventArgs e)
         {
-            ObservableCollection<MyProcess> myProcesses = new ObservableCollection<MyProcess>();
+            //ObservableCollection<MyProcess> myProcesses = new ObservableCollection<MyProcess>();
             // need to refactor this to accept *just* an interface later. this'll do for now.
-            MyProcessViewModel processVM = new MyProcessViewModel(myProcesses);
+            //MyProcessViewModel processVM = new MyProcessViewModel(new ObservableCollection<MyProcess>());
+            MyProcessViewModel processVM = new MyProcessViewModel();
 
             HashSet<string> exclusionList = new HashSet<string>
             {
@@ -38,15 +39,17 @@ namespace ApplicationTimerApp
             };
             MainWindow.Show();
 
+
+
             DispatcherTimer pTimer = new DispatcherTimer();
-            pTimer.Tick += (s, e) => processVM.ProcTimer(exclusionList, myProcesses);
+            pTimer.Tick += (s, e) => processVM.ProcTimer(exclusionList, processVM.MyProcessCollection);
             pTimer.Interval = TimeSpan.FromSeconds(1);
             pTimer.Start();
 
             //processVM.ProcTimer(exclusionList, processVM.MyProcessCollection);
 
             System.Timers.Timer dayTimer = new System.Timers.Timer(15000);
-            dayTimer.Elapsed += (s, e) => processVM.DailyCount(myProcesses);
+            dayTimer.Elapsed += (s, e) => processVM.DailyCount(processVM.MyProcessCollection);
             dayTimer.AutoReset = true;
             dayTimer.Enabled = true;
 

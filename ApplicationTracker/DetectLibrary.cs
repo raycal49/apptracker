@@ -11,35 +11,6 @@ using System.Windows.Data;
 // Dispose of IntPtr peoperly.
 namespace DetectLibrary
 {
-    public static class ProcessUtilities
-    {
-        [DllImport("user32.dll", CharSet = CharSet.Auto, ExactSpelling = true)]
-        private static extern IntPtr GetForegroundWindow();
-
-        [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)]
-        private static extern int GetWindowThreadProcessId(IntPtr handle, out int processId);
-
-        // Check to see if the process at the foreground and the argument process are the same
-        // If they are, return true, else false.
-        public static bool IsActive(string argProcName)
-        {
-            var activatedHandle = GetForegroundWindow();
-
-            if (activatedHandle == IntPtr.Zero)
-            {
-                return false;       // No window is currently activated
-            }
-
-            int activeProcId;
-
-            GetWindowThreadProcessId(activatedHandle, out activeProcId);
-
-            Process activeProc = Process.GetProcessById(activeProcId);
-
-            return activeProc.ProcessName == argProcName;
-        }
-    }
-
     public static class IdleTimeDetector
     {
         [DllImport("user32.dll")]
@@ -80,7 +51,7 @@ namespace DetectLibrary
         public int SystemUptimeMilliseconds { get; internal set; }
     }
 
-    internal struct LASTINPUTINFO
+    public struct LASTINPUTINFO
     {
         public uint cbSize;
         public uint dwTime;

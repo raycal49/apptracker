@@ -18,15 +18,19 @@ namespace ApplicationTracker.View_Models
     public class MyProcessViewModel
     {
 
-        public MyProcessViewModel(ObservableCollection<MyProcess> myProcessList)
+        public MyProcessViewModel()
         {
-            MyProcessCollection = myProcessList;
+            MyProcessCollection = new ObservableCollection<MyProcess>();
         }
 
         public ObservableCollection<MyProcess> MyProcessCollection { get; set; }
 
         public void ProcTimer(HashSet<string> exclusionList, ObservableCollection<MyProcess> runningProcs)
         {
+                //ActiveWindowHelper helper = new ActiveWindowHelper();    
+
+                //Process[] processes = Process.GetProcesses();
+
                 GetRunningProcs(exclusionList, runningProcs);
 
                 var idleTime = IdleTimeDetector.GetIdleTimeInfo();
@@ -57,9 +61,11 @@ namespace ApplicationTracker.View_Models
 
         public void UpdateRunningProcs(ObservableCollection<MyProcess> runningProcs)
         {
+            ActiveWindow window = new ActiveWindow(new ActiveWindowHelper());
+
             foreach (MyProcess proc in runningProcs)
             {
-                if (ProcessUtilities.IsActive(proc.ProcessName))
+                if (window.IsActive(proc.ProcessName))
                 {
                     TimeSpan interval = TimeSpan.FromSeconds(1);
                     proc.ProcessTime += interval;

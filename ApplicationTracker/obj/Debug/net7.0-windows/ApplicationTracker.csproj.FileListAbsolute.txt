@@ -122,3 +122,5 @@ C:\Users\shado\source\repos\apptracker\ApplicationTracker\obj\Debug\net7.0-windo
 C:\Users\shado\source\repos\apptracker\ApplicationTracker\obj\Debug\net7.0-windows\ApplicationTracker.pdb
 C:\Users\shado\source\repos\apptracker\ApplicationTracker\obj\Debug\net7.0-windows\ApplicationTracker.genruntimeconfig.cache
 C:\Users\shado\source\repos\apptracker\ApplicationTracker\obj\Debug\net7.0-windows\ref\ApplicationTracker.dll
+C:\Users\shado\source\repos\apptracker\ApplicationTracker\bin\Debug\net7.0-windows\Castle.Core.dll
+C:\Users\shado\source\repos\apptracker\ApplicationTracker\bin\Debug\net7.0-windows\NSubstitute.dll
