@@ -31,8 +31,6 @@ namespace ApplicationTracker.UnitTests
             Assert.IsFalse(result);
         }
 
-
-
         [Test]
         public void IsActive_ActiveProcEqualsArgProcName_ReturnsTrue()
         {
@@ -56,7 +54,6 @@ namespace ApplicationTracker.UnitTests
             // assert
             Assert.IsTrue(result);
         }
-
 
         [Test]
         public void IsActive_ActiveProcDoesntEqualArgProcName_ReturnsFalse()
