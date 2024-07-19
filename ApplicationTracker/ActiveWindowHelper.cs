@@ -1,5 +1,5 @@
 ﻿using ApplicationTracker.Models;
-using DetectLibrary;
+using IdleDetect;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -20,10 +20,6 @@ namespace ApplicationTracker
 
         public IntPtr WrapperGetForegroundWindow()
         {
-            //IntPtr temp = GetForegroundWindow();
-
-            //return temp;
-
             return GetForegroundWindow();
         }
 
@@ -39,20 +35,7 @@ namespace ApplicationTracker
         {
             Process temp = Process.GetProcessById(processId);
             MyProcess process = new MyProcess() { ProcessName = temp.ProcessName };
-            //return Process.GetProcessById(processId);
             return process;
         }
-
-        /*
-        [DllImport("user32.dll")]
-        static extern bool GetLastInputInfo(ref LASTINPUTINFO plii);
-
-        
-        public bool GetLastInputInfo(ref LASTINPUTINFO plii)
-        {
-            return GetLastInputInfo(ref plii);
-        }
-        */
-
     }
 }

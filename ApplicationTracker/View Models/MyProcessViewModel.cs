@@ -11,7 +11,7 @@ using System.Timers;
 using System.Windows.Threading;
 using ApplicationTracker.Models;
 using ApplicationTracker.Repositories;
-using DetectLibrary;
+using IdleDetect;
 
 namespace ApplicationTracker.View_Models
 {
@@ -33,7 +33,7 @@ namespace ApplicationTracker.View_Models
 
                 GetRunningProcs(exclusionList, runningProcs);
 
-                var idleTime = IdleTimeDetector.GetIdleTimeInfo();
+                var idleTime = IdleTimeDetect.GetIdleTimeInfo(new IdleDetectHelper());
 
                 if (idleTime.IdleTime.TotalMinutes <= 1)
                 {

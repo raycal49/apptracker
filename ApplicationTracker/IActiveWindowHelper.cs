@@ -1,5 +1,5 @@
 ﻿using ApplicationTracker.Models;
-using DetectLibrary;
+using IdleDetect;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
