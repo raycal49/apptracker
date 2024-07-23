@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker.UnitTests\\ApplicationTracker.UnitTests.csproj": {}
+    "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker.UnitTests\\ApplicationTracker.UnitTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker.UnitTests\\ApplicationTracker.UnitTests.csproj": {
+    "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker.UnitTests\\ApplicationTracker.UnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker.UnitTests\\ApplicationTracker.UnitTests.csproj",
+        "projectUniqueName": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker.UnitTests\\ApplicationTracker.UnitTests.csproj",
         "projectName": "ApplicationTracker.UnitTests",
-        "projectPath": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker.UnitTests\\ApplicationTracker.UnitTests.csproj",
-        "packagesPath": "C:\\Users\\Ray\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker.UnitTests\\obj\\",
+        "projectPath": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker.UnitTests\\ApplicationTracker.UnitTests.csproj",
+        "packagesPath": "C:\\Users\\shado\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker.UnitTests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Ray\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\shado\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,14 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0-windows7.0": {
             "targetAlias": "net7.0-windows",
             "projectReferences": {
-              "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\ApplicationTracker.csproj": {
-                "projectPath": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\ApplicationTracker.csproj"
+              "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\ApplicationTracker.csproj": {
+                "projectPath": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\ApplicationTracker.csproj"
               }
             }
           }
@@ -42,6 +43,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -89,24 +95,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\ApplicationTracker.csproj": {
+    "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\ApplicationTracker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\ApplicationTracker.csproj",
+        "projectUniqueName": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\ApplicationTracker.csproj",
         "projectName": "ApplicationTracker",
-        "projectPath": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\ApplicationTracker.csproj",
-        "packagesPath": "C:\\Users\\Ray\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\obj\\",
+        "projectPath": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\ApplicationTracker.csproj",
+        "packagesPath": "C:\\Users\\shado\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Ray\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\shado\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -115,6 +121,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -127,12 +134,21 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "dependencies": {
+            "LiveChartsCore.SkiaSharpView.WPF": {
+              "target": "Package",
+              "version": "[2.0.0-rc2, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[7.0.14, )"
@@ -167,7 +183,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
