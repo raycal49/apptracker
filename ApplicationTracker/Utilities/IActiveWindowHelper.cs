@@ -1,21 +1,14 @@
 ﻿using ApplicationTracker.Models;
-using IdleDetect;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ApplicationTracker
+namespace ApplicationTracker.Utilities
 {
     public interface IActiveWindowHelper
     {
         //IntPtr GetForegroundWindow();
-        IntPtr WrapperGetForegroundWindow();
+        nint WrapperGetForegroundWindow();
 
         //int GetWindowThreadProcessId(IntPtr handle, out int processId);
-        int WrapperGetWindowThreadProcessId(IntPtr handle, out int processId);
+        int WrapperGetWindowThreadProcessId(nint handle, out int processId);
 
         MyProcess WrapperGetProcessById(int processId);
 

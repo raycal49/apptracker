@@ -15,7 +15,6 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Runtime.InteropServices;
-using IdleDetect;
 using ApplicationTracker.Models;
 using System.Windows.Threading;
 using System.Globalization;

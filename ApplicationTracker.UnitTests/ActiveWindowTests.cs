@@ -1,7 +1,6 @@
 ﻿using System;
 using NUnit;
 using NSubstitute;
-using ApplicationTracker;
 using System.Runtime.InteropServices;
 using System.Diagnostics;
 using System.Collections.Generic;
@@ -10,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using NUnit.Framework;
 using ApplicationTracker.Models;
+using ApplicationTracker.Utilities;
 
 namespace ApplicationTracker.UnitTests
 {
@@ -62,6 +62,7 @@ namespace ApplicationTracker.UnitTests
             var fakeHelper = Substitute.For<IActiveWindowHelper>();
             var activeWindow = new ActiveWindow(fakeHelper);
             fakeHelper.WrapperGetForegroundWindow().Returns(123);
+
             fakeHelper
                     .WrapperGetWindowThreadProcessId(123, out Arg.Any<int>())
                     .Returns(x =>

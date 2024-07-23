@@ -1,5 +1,6 @@
 ﻿using ApplicationTracker;
 using ApplicationTracker.Models;
+using ApplicationTracker.Utilities;
 using ApplicationTracker.View_Models;
 using System.Collections.ObjectModel;
 using System.Configuration;
@@ -39,10 +40,12 @@ namespace ApplicationTimerApp
             };
             MainWindow.Show();
 
-
+            ProcHelper procHelper = new ProcHelper();
+            IdleDetect idleDetect = new IdleDetect();
+            ActiveWindow active = new ActiveWindow(new ActiveWindowHelper());
 
             DispatcherTimer pTimer = new DispatcherTimer();
-            pTimer.Tick += (s, e) => processVM.ProcTimer(exclusionList, processVM.MyProcessCollection);
+            pTimer.Tick += (s, e) => procHelper.ProcTimer(exclusionList, processVM.MyProcessCollection, idleDetect, active);
             pTimer.Interval = TimeSpan.FromSeconds(1);
             pTimer.Start();
 

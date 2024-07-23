@@ -1,5 +1,4 @@
 ﻿using ApplicationTracker.Models;
-using IdleDetect;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -8,7 +7,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ApplicationTracker
+namespace ApplicationTracker.Utilities
 {
     // probably need to have the below wrapper implement IDisposable
     // To properly get rid of pointers.
@@ -16,17 +15,17 @@ namespace ApplicationTracker
     {
 
         [DllImport("user32.dll", CharSet = CharSet.Auto, ExactSpelling = true)]
-        public static extern IntPtr GetForegroundWindow();
+        public static extern nint GetForegroundWindow();
 
-        public IntPtr WrapperGetForegroundWindow()
+        public nint WrapperGetForegroundWindow()
         {
             return GetForegroundWindow();
         }
 
         [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)]
-        public static extern int GetWindowThreadProcessId(IntPtr handle, out int processId);
+        public static extern int GetWindowThreadProcessId(nint handle, out int processId);
 
-        public int WrapperGetWindowThreadProcessId(IntPtr handle, out int processId)
+        public int WrapperGetWindowThreadProcessId(nint handle, out int processId)
         {
             return GetWindowThreadProcessId(handle, out processId);
         }

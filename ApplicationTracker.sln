@@ -5,7 +5,7 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationTracker", "ApplicationTracker\ApplicationTracker.csproj", "{68FC2F05-02AD-4C21-827F-F088F53D2E92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationTracker.UnitTests", "ApplicationTracker.UnitTests\ApplicationTracker.UnitTests.csproj", "{41158769-EFA2-491A-BE9C-B13D9D92936E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationTracker.UnitTests", "ApplicationTracker.UnitTests\ApplicationTracker.UnitTests.csproj", "{41158769-EFA2-491A-BE9C-B13D9D92936E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

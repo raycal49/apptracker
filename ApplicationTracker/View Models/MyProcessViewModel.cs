@@ -11,7 +11,7 @@ using System.Timers;
 using System.Windows.Threading;
 using ApplicationTracker.Models;
 using ApplicationTracker.Repositories;
-using IdleDetect;
+using ApplicationTracker.Utilities;
 
 namespace ApplicationTracker.View_Models
 {
@@ -24,55 +24,6 @@ namespace ApplicationTracker.View_Models
         }
 
         public ObservableCollection<MyProcess> MyProcessCollection { get; set; }
-
-        public void ProcTimer(HashSet<string> exclusionList, ObservableCollection<MyProcess> runningProcs)
-        {
-                //ActiveWindowHelper helper = new ActiveWindowHelper();    
-
-                //Process[] processes = Process.GetProcesses();
-
-                GetRunningProcs(exclusionList, runningProcs);
-
-                var idleTime = IdleTimeDetect.GetIdleTimeInfo(new IdleDetectHelper());
-
-                if (idleTime.IdleTime.TotalMinutes <= 1)
-                {
-                    UpdateRunningProcs(runningProcs);
-                }
-            
-        }
-
-        public void GetRunningProcs(HashSet<string> exclusionList, ObservableCollection<MyProcess> runningProcs)
-        {
-            Process[] processes = Process.GetProcesses();
-
-            foreach (Process item in processes)
-            {
-
-                if (item.MainWindowHandle != IntPtr.Zero
-                                          && !exclusionList.Contains(item.ProcessName)
-                                          && !runningProcs.Any(p => p.ProcessName == item.ProcessName))
-                {
-                    runningProcs.Add(new MyProcess() { ProcessName = item.ProcessName });
-                }
-
-            }
-        }
-
-        public void UpdateRunningProcs(ObservableCollection<MyProcess> runningProcs)
-        {
-            ActiveWindow window = new ActiveWindow(new ActiveWindowHelper());
-
-            foreach (MyProcess proc in runningProcs)
-            {
-                if (window.IsActive(proc.ProcessName))
-                {
-                    TimeSpan interval = TimeSpan.FromSeconds(1);
-                    proc.ProcessTime += interval;
-                    break;
-                }
-            }
-        }
 
         public void DailyCount(ObservableCollection<MyProcess> runningProcs)
         {

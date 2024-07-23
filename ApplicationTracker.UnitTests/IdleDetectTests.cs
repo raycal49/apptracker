@@ -1,7 +1,6 @@
 ﻿using System;
 using NUnit;
 using NSubstitute;
-using ApplicationTracker;
 using System.Runtime.InteropServices;
 using System.Diagnostics;
 using System.Collections.Generic;
@@ -10,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using NUnit.Framework;
 using ApplicationTracker.Models;
-using IdleDetect;
+using ApplicationTracker.Utilities;
 
 namespace ApplicationTracker.UnitTests
 {
@@ -22,6 +21,7 @@ namespace ApplicationTracker.UnitTests
         {
             // arrange
             var fakeHelper = Substitute.For<IIdleDetectHelper>();
+            var idle = new IdleDetect();
 
             fakeHelper.GetSystemUptime().Returns(13);
 
@@ -46,7 +46,7 @@ namespace ApplicationTracker.UnitTests
             var idleTicks = systemUptime - lastInputTicks;
 
             // act
-            var result = IdleTimeDetect.GetIdleTimeInfo(fakeHelper);
+            var result = idle.GetIdleTimeInfo(fakeHelper);
             var expected = new IdleTimeInfo(idleTicks, systemUptime);
 
             // assert

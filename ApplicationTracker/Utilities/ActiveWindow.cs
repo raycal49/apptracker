@@ -5,23 +5,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ApplicationTracker
+namespace ApplicationTracker.Utilities
 {
     public class ActiveWindow
     {
         IActiveWindowHelper helper;
+
+        public ActiveWindow() { }
 
         public ActiveWindow(IActiveWindowHelper helper)
         {
             this.helper = helper;
         }
 
-        public bool IsActive(string argProcName)
+        public virtual bool IsActive(string argProcName)
         {
 
-            IntPtr activatedHandle = helper.WrapperGetForegroundWindow();
+            nint activatedHandle = helper.WrapperGetForegroundWindow();
 
-            if (activatedHandle == IntPtr.Zero)
+            if (activatedHandle == nint.Zero)
             {
                 return false;       // No window is currently activated
             }

@@ -1,5 +1,4 @@
-﻿using ApplicationTracker;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
@@ -10,14 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Data;
 
 // Dispose of IntPtr peoperly.
-namespace IdleDetect
+namespace ApplicationTracker.Utilities
 {
-    public static class IdleTimeDetect
+    public class IdleDetect
     {
         //[DllImport("user32.dll")]
         //public static extern bool GetLastInputInfo(ref LASTINPUTINFO plii);
 
-        public static IdleTimeInfo GetIdleTimeInfo(IIdleDetectHelper idleDetectHelper)
+        public virtual IdleTimeInfo GetIdleTimeInfo(IIdleDetectHelper idleDetectHelper)
         {
             int systemUptime = idleDetectHelper.GetSystemUptime(),
                 lastInputTicks = 0,
@@ -46,7 +45,7 @@ namespace IdleDetect
         {
             LastInputTime = DateTime.Now.AddMilliseconds(-1 * idleTicks);
             IdleTime = new TimeSpan(0, 0, 0, 0, idleTicks);
-            SystemUptimeMilliseconds = systemUptime;
+            SystemUptimeMilliseconds = systemUptime;//
         }
 
         public DateTime LastInputTime { get; internal set; }
