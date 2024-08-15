@@ -8,8 +8,7 @@ namespace ApplicationTracker.Repositories
 {
     public interface IUnitOfWork : IDisposable
     {
-        IDailyTotalRepository DailyTotals { get;  }
-
+        IProcessDataRepository ProcessTable { get; }
         int Complete();
     }
 }

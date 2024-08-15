@@ -10,12 +10,12 @@ namespace ApplicationTracker.Repositories
     public class UnitOfWork : IUnitOfWork
     {
         private readonly DbContext _context;
-        public IDailyTotalRepository DailyTotals { get; set; }
+        public IProcessDataRepository ProcessTable { get; set; }
 
         public UnitOfWork(DbContext context)
         {
             _context = context;
-            DailyTotals = new DailyTotalRepository(_context);
+            ProcessTable = new ProcessDataRepository(_context);
         }
 
         public int Complete()
