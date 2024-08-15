@@ -1,4 +1,5 @@
 ﻿using ApplicationTracker.Models;
+using ApplicationTracker.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -46,10 +47,32 @@ namespace ApplicationTracker.Utilities
             }
         }
 
+        public void UpdateProcessTable(ObservableCollection<ProcessWrapper> currentSessionsRunningProcs)
+        {
+            IUnitOfWork uow = new UnitOfWork(new TrackContext());
+
+            DateTime today = DateTime.Today;
+
+            foreach (ProcessWrapper proc in currentSessionsRunningProcs)
+            {
+                var dbProcess = uow.ProcessTable.FindFirstOrDef(p => p.ProcessName == proc.ProcessName && p.ProcessDate.Date == proc.ProcessDate.Date);
+
+                if (dbProcess != null)
+                {
+                    dbProcess.ProcessTime = proc.ProcessTime;
+                }
+                else if (dbProcess == null && proc.ProcessDate.Date == today)
+                {
+                    uow.ProcessTable.Add(new ProcessData() { ProcessName = proc.ProcessName, ProcessTime = proc.ProcessTime, ProcessDate = proc.ProcessDate });
+                }
+            }
+            uow.Complete();
+        }
+
         public virtual void UpdateRunningProcs(ObservableCollection<ProcessWrapper> runningProcs, ActiveWindow window)
         {
 
-            foreach (MyProcess proc in runningProcs)
+            foreach (ProcessWrapper proc in runningProcs)
             {
                 if (window.IsActive(proc.ProcessName))
                 {

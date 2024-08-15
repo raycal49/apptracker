@@ -105,21 +105,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProcHelper.cs",
-              "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\Utilities\\ProcHelper.cs",
-              "RelativeDocumentMoniker": "ApplicationTracker\\Utilities\\ProcHelper.cs",
-              "ToolTip": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\Utilities\\ProcHelper.cs",
-              "RelativeToolTip": "ApplicationTracker\\Utilities\\ProcHelper.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAQwCkAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-15T02:50:26.2Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -130,8 +117,7 @@
               "RelativeToolTip": "ApplicationTracker\\View Models\\DayViewModel.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAA5wBUAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-15T02:33:09.055Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-15T02:33:09.055Z"
             },
             {
               "$type": "Document",
@@ -141,9 +127,22 @@
               "RelativeDocumentMoniker": "ApplicationTracker\\App.xaml.cs",
               "ToolTip": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\App.xaml.cs",
               "RelativeToolTip": "ApplicationTracker\\App.xaml.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAuwBkAAAA/AAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAWwBcAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-05T02:18:19.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProcHelper.cs",
+              "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\Utilities\\ProcHelper.cs",
+              "RelativeDocumentMoniker": "ApplicationTracker\\Utilities\\ProcHelper.cs",
+              "ToolTip": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\Utilities\\ProcHelper.cs",
+              "RelativeToolTip": "ApplicationTracker\\Utilities\\ProcHelper.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAQwEoAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T02:50:26.2Z",
               "EditorCaption": ""
             },
             {
