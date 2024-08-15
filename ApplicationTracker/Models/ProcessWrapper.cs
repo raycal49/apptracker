@@ -8,7 +8,7 @@ using System.Runtime.CompilerServices;
 
 namespace ApplicationTracker.Models
 {
-    public class MyProcess : INotifyPropertyChanged
+    public class ProcessWrapper : INotifyPropertyChanged
     {
         public int Id { get; set; }
         public string ProcessName { get; set; }
@@ -36,13 +36,11 @@ namespace ApplicationTracker.Models
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        public TimeSpan PreviousProcessTime { get; set; }
-        public DateTime ProcessDate { get; set; } // This property will store the date the process was run
+        public DateTime ProcessDate { get; set; }
 
-        public MyProcess()
+        public ProcessWrapper()
         {
             ProcessDate = DateTime.Now;
         }
-
     }
 }
