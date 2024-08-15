@@ -7,8 +7,8 @@
     xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.WPF;assembly=LiveChartsCore.SkiaSharpView.WPF"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Title="Usage Tracker"
-    Width="350"
-    Height="600"
+    Width="1024"
+    Height="768"
     Closing="MainWindow_Closing"
     mc:Ignorable="d">
 
