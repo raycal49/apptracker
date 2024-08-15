@@ -1,40 +1,29 @@
 ﻿<Window x:Class="ApplicationTracker.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:ApplicationTracker.View_Models"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         Closing="MainWindow_Closing"
         mc:Ignorable="d"
         Title="Usage Tracker" Height="600" Width="350">
 
-    <Window.Resources>
-        <!-- Value converter to convert TimeSpan to width -->
-        <!-- <local:TimeSpanToWidthConverter x:Key="TimeSpanToWidthConverter"/>-->
-
-    </Window.Resources>
-    
-    <!-- this is apparently preferred way of doing this. configure this later
     <Window.DataContext>
-        <local:MainViewModel/>
+        <local:DayViewModel/>
     </Window.DataContext>
-    -->
 
-    <Grid>
-        <TabControl>
-            <TabItem Header="Current Session's Usage">
-                <ListView Margin="10" Name="ProcessInfo" ItemsSource="{Binding MyProcessCollection}" >
-                    <ListView.View>
-                        <GridView>
-                            <GridViewColumn Header="Name" Width="120" DisplayMemberBinding="{Binding ProcessName}" />
-                            <GridViewColumn Header="Usage Time" Width="100" DisplayMemberBinding="{Binding ProcessTime}" />
-                        </GridView>
-                    </ListView.View>
-                </ListView>
-            </TabItem>
-            <TabItem Header="Overall Usage">
-            </TabItem>
-        </TabControl>
-    </Grid>
+    <TabItem Header="Today's Usage">
+        <Grid>
+            <ListView  Margin="10" Name="TodayProcessInfo" ItemsSource="{Binding DayVm.DailyTotal}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Name" Width="120" DisplayMemberBinding="{Binding ProcessName}" />
+                        <GridViewColumn Header="Usage Time" Width="100" DisplayMemberBinding="{Binding ProcessTime}" />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+    </TabItem>
 
     <!--
     <ListView Margin="10" Name="ProcessInfo">

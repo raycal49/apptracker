@@ -21,7 +21,7 @@ namespace ApplicationTimerApp
             //ObservableCollection<MyProcess> myProcesses = new ObservableCollection<MyProcess>();
             // need to refactor this to accept *just* an interface later. this'll do for now.
             //MyProcessViewModel processVM = new MyProcessViewModel(new ObservableCollection<MyProcess>());
-            DayViewModel processVM = new DayViewModel();
+            
 
             HashSet<string> exclusionList = new HashSet<string>
             {
@@ -34,11 +34,10 @@ namespace ApplicationTimerApp
                 "updatechecker",
             };
 
-            MainWindow = new MainWindow()
-            {
-                DataContext = processVM
-            };
+            MainWindow = new MainWindow();
+
             MainWindow.Show();
+            DayViewModel processVM = (DayViewModel)MainWindow.DataContext;
 
             ProcHelper procHelper = new ProcHelper();
             IdleDetect idleDetect = new IdleDetect();

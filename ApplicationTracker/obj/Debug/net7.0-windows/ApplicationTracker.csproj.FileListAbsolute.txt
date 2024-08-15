@@ -142,3 +142,5 @@ C:\Users\shado\source\repos\apptracker\ApplicationTracker\bin\Debug\net7.0-windo
 C:\Users\shado\source\repos\apptracker\ApplicationTracker\bin\Debug\net7.0-windows\runtimes\win-arm64\native\libSkiaSharp.dll
 C:\Users\shado\source\repos\apptracker\ApplicationTracker\bin\Debug\net7.0-windows\runtimes\win-x64\native\libSkiaSharp.dll
 C:\Users\shado\source\repos\apptracker\ApplicationTracker\bin\Debug\net7.0-windows\runtimes\win-x86\native\libSkiaSharp.dll
+C:\Users\shado\source\repos\apptracker\ApplicationTracker\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\shado\source\repos\apptracker\ApplicationTracker\obj\Debug\net7.0-windows\ApplicationTracker_MarkupCompile.lref
