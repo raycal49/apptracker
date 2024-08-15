@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\shado\\source\\repos\\apptracker\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|c:\\users\\shado\\source\\repos\\apptracker\\applicationtracker\\models\\processdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|solutionrelative:applicationtracker\\models\\processdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|c:\\users\\shado\\source\\repos\\apptracker\\applicationtracker\\models\\processwrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|solutionrelative:applicationtracker\\models\\processwrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -73,11 +77,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "ProcessData.cs",
+              "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\Models\\ProcessData.cs",
+              "RelativeDocumentMoniker": "ApplicationTracker\\Models\\ProcessData.cs",
+              "ToolTip": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\Models\\ProcessData.cs",
+              "RelativeToolTip": "ApplicationTracker\\Models\\ProcessData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T02:22:49.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ViewModelBase.cs",
               "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\View Models\\ViewModelBase.cs",
               "RelativeDocumentMoniker": "ApplicationTracker\\View Models\\ViewModelBase.cs",
@@ -85,12 +102,11 @@
               "RelativeToolTip": "ApplicationTracker\\View Models\\ViewModelBase.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-15T02:13:26.585Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-15T02:13:26.585Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ProcessWrapper.cs",
               "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\Models\\ProcessWrapper.cs",
               "RelativeDocumentMoniker": "ApplicationTracker\\Models\\ProcessWrapper.cs",
@@ -103,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MyProcessViewModel.cs",
               "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\View Models\\MyProcessViewModel.cs",
               "RelativeDocumentMoniker": "ApplicationTracker\\View Models\\MyProcessViewModel.cs",
@@ -115,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "DetectLibraryTestsClass1.cs",
               "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker.UnitTests\\DetectLibraryTestsClass1.cs",
               "RelativeDocumentMoniker": "ApplicationTracker.UnitTests\\DetectLibraryTestsClass1.cs",
@@ -126,7 +142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "ActiveWindow.cs",
               "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\ActiveWindow.cs",
               "RelativeDocumentMoniker": "ApplicationTracker\\ActiveWindow.cs",
@@ -138,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "DetectLibrary.cs",
               "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\DetectLibrary.cs",
               "RelativeDocumentMoniker": "ApplicationTracker\\DetectLibrary.cs",
@@ -150,7 +166,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "IActiveWindowHelper.cs",
               "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\IActiveWindowHelper.cs",
               "RelativeDocumentMoniker": "ApplicationTracker\\IActiveWindowHelper.cs",
@@ -162,7 +178,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ApplicationTracker.UnitTests.csproj",
               "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker.UnitTests\\ApplicationTracker.UnitTests.csproj",
               "RelativeDocumentMoniker": "ApplicationTracker.UnitTests\\ApplicationTracker.UnitTests.csproj",
@@ -174,7 +190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "ActiveWindowHelper.cs",
               "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\ActiveWindowHelper.cs",
               "RelativeDocumentMoniker": "ApplicationTracker\\ActiveWindowHelper.cs",
@@ -186,7 +202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\App.xaml.cs",
               "RelativeDocumentMoniker": "ApplicationTracker\\App.xaml.cs",
@@ -198,7 +214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\MainWindow.xaml",
               "RelativeDocumentMoniker": "ApplicationTracker\\MainWindow.xaml",
@@ -209,7 +225,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "TrackContext.cs",
               "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\TrackContext.cs",
               "RelativeDocumentMoniker": "ApplicationTracker\\TrackContext.cs",
@@ -221,7 +237,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "ApplicationTracker.csproj",
               "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\ApplicationTracker.csproj",
               "RelativeDocumentMoniker": "ApplicationTracker\\ApplicationTracker.csproj",
@@ -233,7 +249,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "ApplicationTracker\\MainWindow.xaml.cs",
@@ -245,7 +261,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\App.xaml",
               "RelativeDocumentMoniker": "ApplicationTracker\\App.xaml",
@@ -256,7 +272,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "dbo.Processes [Data]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/TrackDatabase/True/SqlTable/dbo.Processes.sql",
               "ToolTip": "dbo.Processes [Data]",
