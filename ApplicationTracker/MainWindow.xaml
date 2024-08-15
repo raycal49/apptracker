@@ -17,38 +17,39 @@
     </Window.DataContext>
 
     <Grid>
-    <TabControl>
-        <TabItem Header="Today's Usage">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="1.5*" />
-                    <RowDefinition Height="*" />
-                </Grid.RowDefinitions>
-                <lvc:PieChart 
-                    Grid.Row="0" 
-                    Series="{Binding DayVm.PieSeries}" 
-                    LegendPosition="Bottom" />
-                <ListView 
-                    Grid.Row="1" 
-                    Margin="10" 
-                    Name="TodayProcessInfo" 
-                    ItemsSource="{Binding DayVm.DailyTotal}">
-                    <ListView.View>
-                        <GridView>
-                            <GridViewColumn 
-                                Header="Name" 
-                                Width="120" 
-                                DisplayMemberBinding="{Binding ProcessName}" />
-                            <GridViewColumn 
-                                Header="Usage Time" 
-                                Width="100" 
-                                DisplayMemberBinding="{Binding ProcessTime}" />
-                        </GridView>
-                    </ListView.View>
-                </ListView>
-            </Grid>
-        </TabItem>
-    </TabControl>
-</Grid>
+        <TabControl>
+            <TabItem Header="Today's Usage">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1.5*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <lvc:PieChart
+                        Grid.Row="0"
+                        LegendPosition="Bottom"
+                        Series="{Binding DayVm.PieSeries}" />
+                    <ListView
+                        Name="TodayProcessInfo"
+                        Grid.Row="1"
+                        Margin="10"
+                        ItemsSource="{Binding DayVm.DailyTotal}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn
+                                    Width="120"
+                                    DisplayMemberBinding="{Binding ProcessName}"
+                                    Header="Name" />
+                                <GridViewColumn
+                                    Width="100"
+                                    DisplayMemberBinding="{Binding ProcessTime}"
+                                    Header="Usage Time" />
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </Grid>
+            </TabItem>
+            <TabItem Header="This Week's Usage" />
+        </TabControl>
+    </Grid>
 
 </Window>
