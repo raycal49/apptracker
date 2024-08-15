@@ -1,4 +1,6 @@
 ﻿using ApplicationTracker.Models;
+using ApplicationTracker.Repositories;
+using ApplicationTracker.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -12,10 +14,21 @@ namespace ApplicationTracker.View_Models
     {
         public DayViewModel()
         {
-            DailyTotal = new ObservableCollection<ProcessWrapper>();
+            DailyTotal = new ObservableCollection<ProcessWrapper>(GetDailyTotal());
         }
 
         public ObservableCollection<ProcessWrapper> DailyTotal { get; set; }
+
+        public IEnumerable<ProcessWrapper> GetDailyTotal()
+        {
+            IUnitOfWork uow = new UnitOfWork(new TrackContext());
+
+            DateTime today = DateTime.Today;
+
+            var dailyTotal = uow.ProcessTable.Find(p => p.ProcessDate.Date == today);
+
+            return ViewModelUtils.ConvertProcDataToProcWrapper(dailyTotal);
+        }
     }
 
   

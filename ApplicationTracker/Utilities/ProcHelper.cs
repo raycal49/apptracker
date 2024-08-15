@@ -11,7 +11,7 @@ namespace ApplicationTracker.Utilities
 {
     public class ProcHelper
     {
-        public void ProcTimer(HashSet<string> exclusionList, ObservableCollection<MyProcess> runningProcs, IdleDetect idleDetect, ActiveWindow active)
+        public void ProcTimer(HashSet<string> exclusionList, ObservableCollection<ProcessWrapper> runningProcs, IdleDetect idleDetect, ActiveWindow active)
         {
             //ActiveWindowHelper helper = new ActiveWindowHelper();    
 
@@ -29,7 +29,7 @@ namespace ApplicationTracker.Utilities
 
         }
 
-        public virtual void GetRunningProcs(HashSet<string> exclusionList, ObservableCollection<MyProcess> runningProcs)
+        public virtual void GetRunningProcs(HashSet<string> exclusionList, ObservableCollection<ProcessWrapper> runningProcs)
         {
             Process[] processes = Process.GetProcesses();
 
@@ -40,13 +40,13 @@ namespace ApplicationTracker.Utilities
                                           && !exclusionList.Contains(item.ProcessName)
                                           && !runningProcs.Any(p => p.ProcessName == item.ProcessName))
                 {
-                    runningProcs.Add(new MyProcess() { ProcessName = item.ProcessName });
+                    runningProcs.Add(new ProcessWrapper() { ProcessName = item.ProcessName });
                 }
 
             }
         }
 
-        public virtual void UpdateRunningProcs(ObservableCollection<MyProcess> runningProcs, ActiveWindow window)
+        public virtual void UpdateRunningProcs(ObservableCollection<ProcessWrapper> runningProcs, ActiveWindow window)
         {
 
             foreach (MyProcess proc in runningProcs)
