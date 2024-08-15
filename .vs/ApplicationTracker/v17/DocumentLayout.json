@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|solutionrelative:applicationtracker\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|c:\\users\\shado\\source\\repos\\apptracker\\applicationtracker\\applicationtracker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|solutionrelative:applicationtracker\\applicationtracker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|c:\\users\\shado\\source\\repos\\apptracker\\applicationtracker\\view models\\dayviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|solutionrelative:applicationtracker\\view models\\dayviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|c:\\users\\shado\\source\\repos\\apptracker\\applicationtracker\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|solutionrelative:applicationtracker\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -15,99 +23,7 @@
       "RelativeMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|solutionrelative:applicationtracker\\view models\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|c:\\users\\shado\\source\\repos\\apptracker\\applicationtracker\\view models\\dayviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|solutionrelative:applicationtracker\\view models\\dayviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|c:\\users\\shado\\source\\repos\\apptracker\\applicationtracker\\models\\processwrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|solutionrelative:applicationtracker\\models\\processwrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|c:\\users\\shado\\source\\repos\\apptracker\\applicationtracker\\utilities\\activewindowhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|solutionrelative:applicationtracker\\utilities\\activewindowhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|c:\\users\\shado\\source\\repos\\apptracker\\applicationtracker\\utilities\\iactivewindowhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|solutionrelative:applicationtracker\\utilities\\iactivewindowhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|c:\\users\\shado\\source\\repos\\apptracker\\applicationtracker\\utilities\\prochelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|solutionrelative:applicationtracker\\utilities\\prochelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|c:\\users\\shado\\source\\repos\\apptracker\\applicationtracker\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|solutionrelative:applicationtracker\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|c:\\users\\shado\\source\\repos\\apptracker\\applicationtracker\\repositories\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|solutionrelative:applicationtracker\\repositories\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|c:\\users\\shado\\source\\repos\\apptracker\\applicationtracker\\models\\trackcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|solutionrelative:applicationtracker\\models\\trackcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|c:\\users\\shado\\source\\repos\\apptracker\\applicationtracker\\utilities\\viewmodelutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|solutionrelative:applicationtracker\\utilities\\viewmodelutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|c:\\users\\shado\\source\\repos\\apptracker\\applicationtracker\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|solutionrelative:applicationtracker\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|c:\\users\\shado\\source\\repos\\apptracker\\applicationtracker\\repositories\\processdatarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|solutionrelative:applicationtracker\\repositories\\processdatarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|c:\\users\\shado\\source\\repos\\apptracker\\applicationtracker\\repositories\\iprocessdatarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|solutionrelative:applicationtracker\\repositories\\iprocessdatarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|c:\\users\\shado\\source\\repos\\apptracker\\applicationtracker\\models\\processdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|solutionrelative:applicationtracker\\models\\processdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|c:\\users\\shado\\source\\repos\\apptracker\\applicationtracker\\view models\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|solutionrelative:applicationtracker\\view models\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker.UnitTests\\DetectLibraryTestsClass1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ApplicationTracker.UnitTests\\DetectLibraryTestsClass1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41158769-EFA2-491A-BE9C-B13D9D92936E}|ApplicationTracker.UnitTests\\ApplicationTracker.UnitTests.csproj|c:\\users\\shado\\source\\repos\\apptracker\\applicationtracker.unittests\\applicationtracker.unittests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{41158769-EFA2-491A-BE9C-B13D9D92936E}|ApplicationTracker.UnitTests\\ApplicationTracker.UnitTests.csproj|solutionrelative:applicationtracker.unittests\\applicationtracker.unittests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|c:\\users\\shado\\source\\repos\\apptracker\\applicationtracker\\applicationtracker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|solutionrelative:applicationtracker\\applicationtracker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|c:\\users\\shado\\source\\repos\\apptracker\\applicationtracker\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|solutionrelative:applicationtracker\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|c:\\users\\shado\\source\\repos\\apptracker\\applicationtracker\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|solutionrelative:applicationtracker\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/TrackDatabase/True/SqlTable/dbo.Processes.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\ActiveWindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ApplicationTracker\\ActiveWindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\DetectLibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ApplicationTracker\\DetectLibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\IActiveWindowHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ApplicationTracker\\IActiveWindowHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\ActiveWindowHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ApplicationTracker\\ActiveWindowHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/TrackDatabase/True/SqlTable/dbo.ProcessTable.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     }
   ],
   "DocumentGroupContainers": [
@@ -117,31 +33,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\View Models\\MainViewModel.cs",
-              "RelativeDocumentMoniker": "ApplicationTracker\\View Models\\MainViewModel.cs",
-              "ToolTip": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\View Models\\MainViewModel.cs",
-              "RelativeToolTip": "ApplicationTracker\\View Models\\MainViewModel.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAxwA0AAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-15T03:26:55.786Z",
+              "DocumentIndex": 1,
+              "Title": "ApplicationTracker",
+              "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\ApplicationTracker.csproj",
+              "RelativeDocumentMoniker": "ApplicationTracker\\ApplicationTracker.csproj",
+              "ToolTip": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\ApplicationTracker.csproj",
+              "RelativeToolTip": "ApplicationTracker\\ApplicationTracker.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-15T15:46:56.568Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "DayViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\View Models\\DayViewModel.cs",
+              "RelativeDocumentMoniker": "ApplicationTracker\\View Models\\DayViewModel.cs",
+              "ToolTip": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\View Models\\DayViewModel.cs",
+              "RelativeToolTip": "ApplicationTracker\\View Models\\DayViewModel.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAA1wDgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T15:35:35.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\MainWindow.xaml",
               "RelativeDocumentMoniker": "ApplicationTracker\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\MainWindow.xaml",
               "RelativeToolTip": "ApplicationTracker\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-05T02:18:19.691Z",
+              "WhenOpened": "2024-08-15T15:27:59.92Z",
               "EditorCaption": ""
             },
             {
@@ -152,296 +81,33 @@
               "RelativeDocumentMoniker": "ApplicationTracker\\App.xaml.cs",
               "ToolTip": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\App.xaml.cs",
               "RelativeToolTip": "ApplicationTracker\\App.xaml.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAgwDMAAAAAAAAA",
+              "ViewState": "AQIAACMAAAAAAAAAAAAuwC4AAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T02:18:19.725Z",
+              "WhenOpened": "2024-08-15T15:28:17.455Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DayViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\View Models\\DayViewModel.cs",
-              "RelativeDocumentMoniker": "ApplicationTracker\\View Models\\DayViewModel.cs",
-              "ToolTip": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\View Models\\DayViewModel.cs",
-              "RelativeToolTip": "ApplicationTracker\\View Models\\DayViewModel.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAgwBMAAAArAAAA",
+              "DocumentIndex": 4,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\View Models\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "ApplicationTracker\\View Models\\MainViewModel.cs",
+              "ToolTip": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\View Models\\MainViewModel.cs",
+              "RelativeToolTip": "ApplicationTracker\\View Models\\MainViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-15T02:33:09.055Z",
+              "WhenOpened": "2024-08-15T15:27:50.148Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "ActiveWindowHelper.cs",
-              "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\Utilities\\ActiveWindowHelper.cs",
-              "RelativeDocumentMoniker": "ApplicationTracker\\Utilities\\ActiveWindowHelper.cs",
-              "ToolTip": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\Utilities\\ActiveWindowHelper.cs",
-              "RelativeToolTip": "ApplicationTracker\\Utilities\\ActiveWindowHelper.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAwwCMAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-15T03:08:53.497Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ProcHelper.cs",
-              "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\Utilities\\ProcHelper.cs",
-              "RelativeDocumentMoniker": "ApplicationTracker\\Utilities\\ProcHelper.cs",
-              "ToolTip": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\Utilities\\ProcHelper.cs",
-              "RelativeToolTip": "ApplicationTracker\\Utilities\\ProcHelper.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAQwEoAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-15T02:50:26.2Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\Repositories\\Repository.cs",
-              "RelativeDocumentMoniker": "ApplicationTracker\\Repositories\\Repository.cs",
-              "ToolTip": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\Repositories\\Repository.cs",
-              "RelativeToolTip": "ApplicationTracker\\Repositories\\Repository.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAQwCEAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-15T02:30:45.528Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IUnitOfWork.cs",
-              "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\Repositories\\IUnitOfWork.cs",
-              "RelativeDocumentMoniker": "ApplicationTracker\\Repositories\\IUnitOfWork.cs",
-              "ToolTip": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\Repositories\\IUnitOfWork.cs",
-              "RelativeToolTip": "ApplicationTracker\\Repositories\\IUnitOfWork.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-15T02:42:46.864Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProcessWrapper.cs",
-              "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\Models\\ProcessWrapper.cs",
-              "RelativeDocumentMoniker": "ApplicationTracker\\Models\\ProcessWrapper.cs",
-              "ToolTip": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\Models\\ProcessWrapper.cs",
-              "RelativeToolTip": "ApplicationTracker\\Models\\ProcessWrapper.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAgwAoAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T15:46:09.448Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IActiveWindowHelper.cs",
-              "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\Utilities\\IActiveWindowHelper.cs",
-              "RelativeDocumentMoniker": "ApplicationTracker\\Utilities\\IActiveWindowHelper.cs",
-              "ToolTip": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\Utilities\\IActiveWindowHelper.cs",
-              "RelativeToolTip": "ApplicationTracker\\Utilities\\IActiveWindowHelper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-15T03:10:49.625Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\Repositories\\UnitOfWork.cs",
-              "RelativeDocumentMoniker": "ApplicationTracker\\Repositories\\UnitOfWork.cs",
-              "ToolTip": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\Repositories\\UnitOfWork.cs",
-              "RelativeToolTip": "ApplicationTracker\\Repositories\\UnitOfWork.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAuwBIAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-15T02:42:15.062Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "TrackContext.cs",
-              "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\Models\\TrackContext.cs",
-              "RelativeDocumentMoniker": "ApplicationTracker\\Models\\TrackContext.cs",
-              "ToolTip": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\Models\\TrackContext.cs",
-              "RelativeToolTip": "ApplicationTracker\\Models\\TrackContext.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAuwBEAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T02:18:19.728Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ViewModelUtils.cs",
-              "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\Utilities\\ViewModelUtils.cs",
-              "RelativeDocumentMoniker": "ApplicationTracker\\Utilities\\ViewModelUtils.cs",
-              "ToolTip": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\Utilities\\ViewModelUtils.cs",
-              "RelativeToolTip": "ApplicationTracker\\Utilities\\ViewModelUtils.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-15T02:37:02.461Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ProcessDataRepository.cs",
-              "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\Repositories\\ProcessDataRepository.cs",
-              "RelativeDocumentMoniker": "ApplicationTracker\\Repositories\\ProcessDataRepository.cs",
-              "ToolTip": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\Repositories\\ProcessDataRepository.cs",
-              "RelativeToolTip": "ApplicationTracker\\Repositories\\ProcessDataRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-15T02:29:14.028Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "IProcessDataRepository.cs",
-              "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\Repositories\\IProcessDataRepository.cs",
-              "RelativeDocumentMoniker": "ApplicationTracker\\Repositories\\IProcessDataRepository.cs",
-              "ToolTip": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\Repositories\\IProcessDataRepository.cs",
-              "RelativeToolTip": "ApplicationTracker\\Repositories\\IProcessDataRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-15T02:28:03.838Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ProcessData.cs",
-              "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\Models\\ProcessData.cs",
-              "RelativeDocumentMoniker": "ApplicationTracker\\Models\\ProcessData.cs",
-              "ToolTip": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\Models\\ProcessData.cs",
-              "RelativeToolTip": "ApplicationTracker\\Models\\ProcessData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-15T02:22:49.933Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ViewModelBase.cs",
-              "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\View Models\\ViewModelBase.cs",
-              "RelativeDocumentMoniker": "ApplicationTracker\\View Models\\ViewModelBase.cs",
-              "ToolTip": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\View Models\\ViewModelBase.cs",
-              "RelativeToolTip": "ApplicationTracker\\View Models\\ViewModelBase.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-15T02:13:26.585Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "DetectLibraryTestsClass1.cs",
-              "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker.UnitTests\\DetectLibraryTestsClass1.cs",
-              "RelativeDocumentMoniker": "ApplicationTracker.UnitTests\\DetectLibraryTestsClass1.cs",
-              "ToolTip": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker.UnitTests\\DetectLibraryTestsClass1.cs",
-              "RelativeToolTip": "ApplicationTracker.UnitTests\\DetectLibraryTestsClass1.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T18:19:07.665Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "ActiveWindow.cs",
-              "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\ActiveWindow.cs",
-              "RelativeDocumentMoniker": "ApplicationTracker\\ActiveWindow.cs",
-              "ToolTip": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\ActiveWindow.cs",
-              "RelativeToolTip": "ApplicationTracker\\ActiveWindow.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAQwBkAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-18T22:04:42.603Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "DetectLibrary.cs",
-              "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\DetectLibrary.cs",
-              "RelativeDocumentMoniker": "ApplicationTracker\\DetectLibrary.cs",
-              "ToolTip": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\DetectLibrary.cs",
-              "RelativeToolTip": "ApplicationTracker\\DetectLibrary.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T01:22:57.725Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "IActiveWindowHelper.cs",
-              "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\IActiveWindowHelper.cs",
-              "RelativeDocumentMoniker": "ApplicationTracker\\IActiveWindowHelper.cs",
-              "ToolTip": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\IActiveWindowHelper.cs",
-              "RelativeToolTip": "ApplicationTracker\\IActiveWindowHelper.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAswBkAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T17:49:40.425Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ApplicationTracker.UnitTests.csproj",
-              "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker.UnitTests\\ApplicationTracker.UnitTests.csproj",
-              "RelativeDocumentMoniker": "ApplicationTracker.UnitTests\\ApplicationTracker.UnitTests.csproj",
-              "ToolTip": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker.UnitTests\\ApplicationTracker.UnitTests.csproj",
-              "RelativeToolTip": "ApplicationTracker.UnitTests\\ApplicationTracker.UnitTests.csproj",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-07-09T19:28:52.665Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "ActiveWindowHelper.cs",
-              "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\ActiveWindowHelper.cs",
-              "RelativeDocumentMoniker": "ApplicationTracker\\ActiveWindowHelper.cs",
-              "ToolTip": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\ActiveWindowHelper.cs",
-              "RelativeToolTip": "ApplicationTracker\\ActiveWindowHelper.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAIwDkAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T22:58:14.668Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ApplicationTracker.csproj",
-              "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\ApplicationTracker.csproj",
-              "RelativeDocumentMoniker": "ApplicationTracker\\ApplicationTracker.csproj",
-              "ToolTip": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\ApplicationTracker.csproj",
-              "RelativeToolTip": "ApplicationTracker\\ApplicationTracker.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-07-09T00:41:18.102Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "ApplicationTracker\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\MainWindow.xaml.cs",
-              "RelativeToolTip": "ApplicationTracker\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAIcAAAAAAAAAAAAuwIwAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T02:18:19.713Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\App.xaml",
-              "RelativeDocumentMoniker": "ApplicationTracker\\App.xaml",
-              "ToolTip": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\App.xaml",
-              "RelativeToolTip": "ApplicationTracker\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-12T23:10:10.603Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "dbo.Processes [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/TrackDatabase/True/SqlTable/dbo.Processes.sql",
-              "ToolTip": "dbo.Processes [Data]",
+              "Title": "dbo.ProcessTable [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/TrackDatabase/True/SqlTable/dbo.ProcessTable.sql",
+              "ToolTip": "dbo.ProcessTable [Data]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-05-24T02:29:42.438Z"
+              "WhenOpened": "2024-08-15T15:27:24.534Z",
+              "EditorCaption": ""
             }
           ]
         }

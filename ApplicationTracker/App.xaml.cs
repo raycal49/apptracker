@@ -55,6 +55,11 @@ namespace ApplicationTimerApp
             dayTimer.AutoReset = true;
             dayTimer.Enabled = true;
 
+            System.Timers.Timer pieTimer = new System.Timers.Timer(30000);
+            pieTimer.Elapsed += (s, e) => mainVm.DayVm.PieSeries = mainVm.DayVm.InitializePieChart(mainVm.DayVm.DailyTotal);
+            pieTimer.AutoReset = true;
+            pieTimer.Enabled = true;
+
             //processVM.DailyTimer(processVM.MyProcessCollection);
 
             base.OnStartup(e);
