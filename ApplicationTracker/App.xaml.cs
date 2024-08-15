@@ -21,7 +21,7 @@ namespace ApplicationTimerApp
             //ObservableCollection<MyProcess> myProcesses = new ObservableCollection<MyProcess>();
             // need to refactor this to accept *just* an interface later. this'll do for now.
             //MyProcessViewModel processVM = new MyProcessViewModel(new ObservableCollection<MyProcess>());
-            MyProcessViewModel processVM = new MyProcessViewModel();
+            DayViewModel processVM = new DayViewModel();
 
             HashSet<string> exclusionList = new HashSet<string>
             {
@@ -45,14 +45,14 @@ namespace ApplicationTimerApp
             ActiveWindow active = new ActiveWindow(new ActiveWindowHelper());
 
             DispatcherTimer pTimer = new DispatcherTimer();
-            pTimer.Tick += (s, e) => procHelper.ProcTimer(exclusionList, processVM.MyProcessCollection, idleDetect, active);
+            pTimer.Tick += (s, e) => procHelper.ProcTimer(exclusionList, processVM.DailyTotal, idleDetect, active);
             pTimer.Interval = TimeSpan.FromSeconds(1);
             pTimer.Start();
 
             //processVM.ProcTimer(exclusionList, processVM.MyProcessCollection);
 
             System.Timers.Timer dayTimer = new System.Timers.Timer(15000);
-            dayTimer.Elapsed += (s, e) => processVM.DailyCount(processVM.MyProcessCollection);
+            dayTimer.Elapsed += (s, e) => procHelper.UpdateProcessTable(processVM.DailyTotal);
             dayTimer.AutoReset = true;
             dayTimer.Enabled = true;
 
