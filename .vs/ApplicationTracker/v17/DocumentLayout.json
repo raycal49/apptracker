@@ -35,8 +35,8 @@
       "RelativeMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|solutionrelative:applicationtracker\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|c:\\users\\shado\\source\\repos\\apptracker\\applicationtracker\\trackcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|solutionrelative:applicationtracker\\trackcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|c:\\users\\shado\\source\\repos\\apptracker\\applicationtracker\\models\\trackcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|solutionrelative:applicationtracker\\models\\trackcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|c:\\users\\shado\\source\\repos\\apptracker\\applicationtracker\\applicationtracker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -87,7 +87,7 @@
               "RelativeDocumentMoniker": "ApplicationTracker\\Models\\ProcessData.cs",
               "ToolTip": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\Models\\ProcessData.cs",
               "RelativeToolTip": "ApplicationTracker\\Models\\ProcessData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAeAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-15T02:22:49.933Z",
               "EditorCaption": ""
@@ -114,8 +114,7 @@
               "RelativeToolTip": "ApplicationTracker\\Models\\ProcessWrapper.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T15:46:09.448Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-07T15:46:09.448Z"
             },
             {
               "$type": "Document",
@@ -227,13 +226,14 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "TrackContext.cs",
-              "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\TrackContext.cs",
-              "RelativeDocumentMoniker": "ApplicationTracker\\TrackContext.cs",
-              "ToolTip": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\TrackContext.cs",
-              "RelativeToolTip": "ApplicationTracker\\TrackContext.cs",
+              "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\Models\\TrackContext.cs",
+              "RelativeDocumentMoniker": "ApplicationTracker\\Models\\TrackContext.cs",
+              "ToolTip": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\Models\\TrackContext.cs",
+              "RelativeToolTip": "ApplicationTracker\\Models\\TrackContext.cs",
               "ViewState": "AQIAABIAAAAAAAAAAAAowBIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T02:18:19.728Z"
+              "WhenOpened": "2024-06-05T02:18:19.728Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
