@@ -37,21 +37,21 @@ namespace ApplicationTimerApp
             MainWindow = new MainWindow();
 
             MainWindow.Show();
-            DayViewModel processVM = (DayViewModel)MainWindow.DataContext;
+            MainViewModel mainVm = (MainViewModel)MainWindow.DataContext;
 
             ProcHelper procHelper = new ProcHelper();
             IdleDetect idleDetect = new IdleDetect();
             ActiveWindow active = new ActiveWindow(new ActiveWindowHelper());
 
             DispatcherTimer pTimer = new DispatcherTimer();
-            pTimer.Tick += (s, e) => procHelper.ProcTimer(exclusionList, processVM.DailyTotal, idleDetect, active);
+            pTimer.Tick += (s, e) => procHelper.ProcTimer(exclusionList, mainVm.DayVm.DailyTotal, idleDetect, active);
             pTimer.Interval = TimeSpan.FromSeconds(1);
             pTimer.Start();
 
             //processVM.ProcTimer(exclusionList, processVM.MyProcessCollection);
 
             System.Timers.Timer dayTimer = new System.Timers.Timer(15000);
-            dayTimer.Elapsed += (s, e) => procHelper.UpdateProcessTable(processVM.DailyTotal);
+            dayTimer.Elapsed += (s, e) => procHelper.UpdateProcessTable(mainVm.DayVm.DailyTotal);
             dayTimer.AutoReset = true;
             dayTimer.Enabled = true;
 

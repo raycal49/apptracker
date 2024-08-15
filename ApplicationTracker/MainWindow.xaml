@@ -9,34 +9,17 @@
         Title="Usage Tracker" Height="600" Width="350">
 
     <Window.DataContext>
-        <local:DayViewModel/>
+        <local:MainViewModel/>
     </Window.DataContext>
 
     <TabItem Header="Today's Usage">
-        <Grid>
-            <ListView  Margin="10" Name="TodayProcessInfo" ItemsSource="{Binding DailyTotal}">
-                <ListView.View>
-                    <GridView>
-                        <GridViewColumn Header="Name" Width="120" DisplayMemberBinding="{Binding ProcessName}" />
-                        <GridViewColumn Header="Usage Time" Width="100" DisplayMemberBinding="{Binding ProcessTime}" />
-                    </GridView>
-                </ListView.View>
-            </ListView>
-        </Grid>
+        <ListView  Margin="10" Name="TodayProcessInfo" ItemsSource="{Binding DayVm.DailyTotal}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Name" Width="120" DisplayMemberBinding="{Binding ProcessName}" />
+                    <GridViewColumn Header="Usage Time" Width="100" DisplayMemberBinding="{Binding ProcessTime}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
     </TabItem>
-
-    <!--
-    <ListView Margin="10" Name="ProcessInfo">
-        <ListView.ItemTemplate>
-            <DataTemplate>
-                <StackPanel Orientation="Horizontal" Height="30">
-                    <TextBlock Text="{Binding ProcessName}" Width="120" VerticalAlignment="Center"/>
-                    <Rectangle Height="5" Fill="Blue" Width="{Binding ProcessTime, Converter={StaticResource TimeSpanToWidthConverter}}" VerticalAlignment="Center"/>
-                    <TextBlock Text="{Binding ProcessTime}" Width="100" VerticalAlignment="Center"/>
-                </StackPanel>
-            </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
-    -->
-
 </Window>
