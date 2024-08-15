@@ -117,8 +117,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "ApplicationTracker\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\MainWindow.xaml",
+              "RelativeToolTip": "ApplicationTracker\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-05T02:18:19.691Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -129,8 +141,7 @@
               "RelativeToolTip": "ApplicationTracker\\Utilities\\ActiveWindow.cs",
               "ViewState": "AQIAABsAAAAAAAAAAADwvyIAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-15T03:11:27.048Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-15T03:11:27.048Z"
             },
             {
               "$type": "Document",
@@ -142,8 +153,7 @@
               "RelativeToolTip": "ApplicationTracker\\Utilities\\IActiveWindowHelper.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-15T03:10:49.625Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-15T03:10:49.625Z"
             },
             {
               "$type": "Document",
@@ -155,8 +165,7 @@
               "RelativeToolTip": "ApplicationTracker\\Utilities\\ActiveWindowHelper.cs",
               "ViewState": "AQIAABwAAAAAAAAAAAAwwCMAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-15T03:08:53.497Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-15T03:08:53.497Z"
             },
             {
               "$type": "Document",
@@ -169,18 +178,6 @@
               "ViewState": "AQIAABsAAAAAAAAAAAAawCoAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-05T02:18:19.725Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "ApplicationTracker\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\shado\\source\\repos\\apptracker\\ApplicationTracker\\MainWindow.xaml",
-              "RelativeToolTip": "ApplicationTracker\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-05T02:18:19.691Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",

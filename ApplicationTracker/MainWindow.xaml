@@ -14,7 +14,7 @@
 
     <TabItem Header="Today's Usage">
         <Grid>
-            <ListView  Margin="10" Name="TodayProcessInfo" ItemsSource="{Binding DayVm.DailyTotal}">
+            <ListView  Margin="10" Name="TodayProcessInfo" ItemsSource="{Binding DailyTotal}">
                 <ListView.View>
                     <GridView>
                         <GridViewColumn Header="Name" Width="120" DisplayMemberBinding="{Binding ProcessName}" />
