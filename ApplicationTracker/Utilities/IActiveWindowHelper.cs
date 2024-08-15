@@ -10,7 +10,7 @@ namespace ApplicationTracker.Utilities
         //int GetWindowThreadProcessId(IntPtr handle, out int processId);
         int WrapperGetWindowThreadProcessId(nint handle, out int processId);
 
-        MyProcess WrapperGetProcessById(int processId);
+        ProcessWrapper WrapperGetProcessById(int processId);
 
         //bool GetLastInputInfo(ref LASTINPUTINFO plii);
 

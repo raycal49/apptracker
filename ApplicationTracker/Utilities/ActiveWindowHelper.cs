@@ -30,10 +30,10 @@ namespace ApplicationTracker.Utilities
             return GetWindowThreadProcessId(handle, out processId);
         }
 
-        public MyProcess WrapperGetProcessById(int processId)
+        public ProcessWrapper WrapperGetProcessById(int processId)
         {
             Process temp = Process.GetProcessById(processId);
-            MyProcess process = new MyProcess() { ProcessName = temp.ProcessName };
+            ProcessWrapper process = new ProcessWrapper() { ProcessName = temp.ProcessName };
             return process;
         }
     }

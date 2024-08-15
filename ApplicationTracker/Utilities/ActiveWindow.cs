@@ -32,7 +32,7 @@ namespace ApplicationTracker.Utilities
 
             helper.WrapperGetWindowThreadProcessId(activatedHandle, out activeProcId);
 
-            MyProcess activeProc = helper.WrapperGetProcessById(activeProcId);
+            ProcessWrapper activeProc = helper.WrapperGetProcessById(activeProcId);
 
             //MyProcess activeProcContainer = new MyProcess() { ProcessName = activeProc.ProcessName};
 
