@@ -12,6 +12,7 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LiveChartsCore.Drawing;
 
 namespace ApplicationTracker.View_Models
 {
@@ -22,6 +23,8 @@ namespace ApplicationTracker.View_Models
             ViewModelUtils ViewModelUtils = new ViewModelUtils();
             WeeklyTotal = new ObservableCollection<ProcessWrapper>(GetWeeklyTotal());
             WeeklyChartSeries = InitializeWeeklyChart(WeeklyTotal);
+            XAxes = CreateXAxis();
+            YAxes = CreateYAxis();
         }
 
         public ObservableCollection<ProcessWrapper>? WeeklyTotal { get; set; }
@@ -133,5 +136,39 @@ namespace ApplicationTracker.View_Models
             return chart;
         }
 
+        public Axis[] CreateXAxis()
+        {
+            string[] days = { "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" };
+
+            return new Axis[]
+            {
+                new Axis
+                {
+                    Name = "Day",
+                    Labels = days,
+                    Labeler = value => string.Format("{0:0.000}", value), TextSize = 19, UnitWidth = 0.3, Padding = new Padding(4),
+                    MinLimit = -0.5,
+                    MaxLimit = 6.5,
+                }
+            };
+        }
+
+        public Axis[] CreateYAxis()
+        {
+
+            return new Axis[]
+            {
+                new Axis
+                {
+                    Name = "Hours",
+                    Labeler = value => string.Format("{0:N2}", value),
+                    MinStep = 2,
+                    MinLimit = 0,
+                    MaxLimit = 24,
+                    NamePadding = new Padding(4),
+                    TextSize = 19,
+                }
+            };
+        }
     }
 }
