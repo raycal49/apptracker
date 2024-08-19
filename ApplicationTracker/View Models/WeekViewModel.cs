@@ -1,6 +1,10 @@
 ﻿using ApplicationTracker.Models;
 using ApplicationTracker.Repositories;
 using ApplicationTracker.Utilities;
+using LiveChartsCore.SkiaSharpView.Painting;
+using LiveChartsCore.SkiaSharpView;
+using LiveChartsCore;
+using SkiaSharp;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -38,5 +42,66 @@ namespace ApplicationTracker.View_Models
 
             return ViewModelUtils.ConvertProcDataToProcWrapper(weeklyTotal);
         }
+
+        private ObservableCollection<ProcessWrapper> GetChartData(IEnumerable<ProcessWrapper> weeklyProcesses)
+        {
+            return new ObservableCollection<ProcessWrapper>(
+                weeklyProcesses
+                    .GroupBy(p => p.ProcessDate.DayOfWeek)
+                    .SelectMany(g =>
+                        g.Where(p => p.ProcessTime > TimeSpan.FromMinutes(30))
+                         .OrderByDescending(p => p.ProcessTime)
+                         .Take(10)));
+        }
+
+        private SKColor[] GetColorPalette()
+        {
+            return new SKColor[]
+            {
+                SKColors.CornflowerBlue,
+                SKColors.LightGreen,
+                SKColors.LightSkyBlue,
+                SKColors.PaleGoldenrod,
+                SKColors.PaleGreen,
+                SKColors.PaleTurquoise,
+                SKColors.PeachPuff,
+                SKColors.Plum,
+                SKColors.SkyBlue,
+                SKColors.Thistle,
+                SKColors.Aquamarine,
+                SKColors.DarkSeaGreen,
+                SKColors.HotPink,
+                SKColors.Khaki,
+                SKColors.MediumAquamarine,
+                SKColors.MediumSlateBlue
+            };
+        }
+        private ObservableCollection<ISeries> CreateChart(ObservableCollection<ProcessWrapper> filteredProcesses)
+        {
+            var chart = new ObservableCollection<ISeries>();
+            SKColor[] colors = GetColorPalette();
+
+            int colorIndex = 0;
+            int colorCount = colors.Length;
+
+
+            foreach (var proc in filteredProcesses)
+            {
+
+                chart.Add(new StackedColumnSeries<double>
+                {
+                    Name = proc.ProcessName,
+                    Values = new[] { proc.ProcessTime.TotalHours },
+                    Fill = new SolidColorPaint(colors[colorIndex % colorCount]),
+                    Mapping = (process, index) => new((int)proc.ProcessDate.DayOfWeek, process),
+                    MaxBarWidth = 290,
+                });
+
+                colorIndex++;
+            }
+
+            return chart;
+        }
+
     }
 }
