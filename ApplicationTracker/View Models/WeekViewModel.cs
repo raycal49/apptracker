@@ -19,7 +19,9 @@ namespace ApplicationTracker.View_Models
     {
         public WeekViewModel()
         {
+            ViewModelUtils ViewModelUtils = new ViewModelUtils();
             WeeklyTotal = new ObservableCollection<ProcessWrapper>(GetWeeklyTotal());
+            WeeklyChartSeries = InitializeWeeklyChart(WeeklyTotal);
         }
 
         public ObservableCollection<ProcessWrapper>? WeeklyTotal { get; set; }
@@ -35,6 +37,10 @@ namespace ApplicationTracker.View_Models
                 OnPropertyChanged();
             }
         }
+
+        public Axis[]? XAxes { get; set; }
+
+        public Axis[]? YAxes { get; set; }
 
         private IEnumerable<ProcessWrapper> GetWeeklyTotal()
         {
