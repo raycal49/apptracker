@@ -15,7 +15,7 @@ using System.Threading.Tasks;
 
 namespace ApplicationTracker.View_Models
 {
-    public class WeekViewModel
+    public class WeekViewModel : ViewModelBase
     {
         public WeekViewModel()
         {
@@ -23,6 +23,18 @@ namespace ApplicationTracker.View_Models
         }
 
         public ObservableCollection<ProcessWrapper>? WeeklyTotal { get; set; }
+
+        private ObservableCollection<ISeries>? _weeklyChartSeries;
+
+        public ObservableCollection<ISeries>? WeeklyChartSeries
+        {
+            get { return _weeklyChartSeries; }
+            set
+            {
+                _weeklyChartSeries = value;
+                OnPropertyChanged();
+            }
+        }
 
         private IEnumerable<ProcessWrapper> GetWeeklyTotal()
         {
