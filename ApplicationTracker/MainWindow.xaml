@@ -10,8 +10,8 @@
     Width="1024"
     Height="768"
     Closing="MainWindow_Closing"
-    mc:Ignorable="d">
 
+    mc:Ignorable="d">
     <Window.DataContext>
         <local:MainViewModel />
     </Window.DataContext>
@@ -48,7 +48,11 @@
                     </ListView>
                 </Grid>
             </TabItem>
-            <TabItem Header="This Week's Usage" />
+            <TabItem Header="This Week's Usage">
+                <Grid Margin="70">
+                    <lvc:CartesianChart Series="{Binding WeekVm.WeeklyChartSeries}"  TooltipFindingStrategy="Automatic" XAxes="{Binding WeekVm.XAxes}" YAxes="{Binding WeekVm.YAxes}" />
+                </Grid>
+            </TabItem>
         </TabControl>
     </Grid>
 

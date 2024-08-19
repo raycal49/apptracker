@@ -60,6 +60,16 @@ namespace ApplicationTimerApp
             pieTimer.AutoReset = true;
             pieTimer.Enabled = true;
 
+            System.Timers.Timer weekTimer = new System.Timers.Timer(45000);
+            weekTimer.Elapsed += (s, e) =>
+            {
+                mainVm.WeekVm.WeeklyChartSeries = mainVm.WeekVm.InitializeWeeklyChart(mainVm.WeekVm.WeeklyTotal);
+                mainVm.WeekVm.XAxes = mainVm.WeekVm.CreateXAxis();
+                mainVm.WeekVm.YAxes = mainVm.WeekVm.CreateYAxis();
+            };
+            weekTimer.AutoReset = true;
+            weekTimer.Enabled = true;
+
             //processVM.DailyTimer(processVM.MyProcessCollection);
 
             base.OnStartup(e);
