@@ -103,5 +103,17 @@ namespace ApplicationTracker.View_Models
             return chart;
         }
 
+        public ObservableCollection<ISeries> InitializeWeeklyChart(ObservableCollection<ProcessWrapper> weeklyProcesses)
+        {
+            var chartData = GetChartData(weeklyProcesses);
+
+            if (!chartData.Any())
+                return new ObservableCollection<ISeries>();
+
+            var chart = CreateChart(chartData);
+
+            return chart;
+        }
+
     }
 }
