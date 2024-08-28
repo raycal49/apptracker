@@ -1,11 +1,6 @@
 ﻿using ApplicationTracker;
-using ApplicationTracker.Models;
 using ApplicationTracker.Utilities;
 using ApplicationTracker.View_Models;
-using System.Collections.ObjectModel;
-using System.Configuration;
-using System.Data;
-using System.Diagnostics;
 using System.Windows;
 using System.Windows.Threading;
 
@@ -18,11 +13,6 @@ namespace ApplicationTimerApp
     {
         protected override void OnStartup(StartupEventArgs e)
         {
-            //ObservableCollection<MyProcess> myProcesses = new ObservableCollection<MyProcess>();
-            // need to refactor this to accept *just* an interface later. this'll do for now.
-            //MyProcessViewModel processVM = new MyProcessViewModel(new ObservableCollection<MyProcess>());
-            
-
             HashSet<string> exclusionList = new HashSet<string>
             {
                 //"explorer",
@@ -48,8 +38,6 @@ namespace ApplicationTimerApp
             pTimer.Interval = TimeSpan.FromSeconds(1);
             pTimer.Start();
 
-            //processVM.ProcTimer(exclusionList, processVM.MyProcessCollection);
-
             System.Timers.Timer dayTimer = new System.Timers.Timer(15000);
             dayTimer.Elapsed += (s, e) => procHelper.UpdateProcessTable(mainVm.DayVm.DailyTotal);
             dayTimer.AutoReset = true;
@@ -69,8 +57,6 @@ namespace ApplicationTimerApp
             };
             weekTimer.AutoReset = true;
             weekTimer.Enabled = true;
-
-            //processVM.DailyTimer(processVM.MyProcessCollection);
 
             base.OnStartup(e);
         }

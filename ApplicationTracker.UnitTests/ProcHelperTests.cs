@@ -1,14 +1,7 @@
-﻿using ApplicationTracker.Models;
-using ApplicationTracker.Utilities;
+﻿using ApplicationTracker.Utilities;
 using NSubstitute;
-using NSubstitute.Extensions;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace ApplicationTracker.UnitTests
 {

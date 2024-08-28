@@ -5,13 +5,8 @@ using LiveChartsCore.SkiaSharpView.Painting;
 using LiveChartsCore.SkiaSharpView;
 using LiveChartsCore;
 using SkiaSharp;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using LiveChartsCore.Drawing;
 
 namespace ApplicationTracker.View_Models
@@ -104,7 +99,6 @@ namespace ApplicationTracker.View_Models
 
             int colorIndex = 0;
             int colorCount = colors.Length;
-
 
             foreach (var proc in filteredProcesses)
             {

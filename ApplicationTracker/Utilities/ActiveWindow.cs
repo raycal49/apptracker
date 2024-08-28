@@ -1,9 +1,4 @@
 ﻿using ApplicationTracker.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ApplicationTracker.Utilities
 {
@@ -33,8 +28,6 @@ namespace ApplicationTracker.Utilities
             helper.WrapperGetWindowThreadProcessId(activatedHandle, out activeProcId);
 
             ProcessWrapper activeProc = helper.WrapperGetProcessById(activeProcId);
-
-            //MyProcess activeProcContainer = new MyProcess() { ProcessName = activeProc.ProcessName};
 
             return activeProc.ProcessName == argProcName;
         }

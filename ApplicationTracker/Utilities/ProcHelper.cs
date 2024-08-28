@@ -1,12 +1,7 @@
 ﻿using ApplicationTracker.Models;
 using ApplicationTracker.Repositories;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ApplicationTracker.Utilities
 {
@@ -14,17 +9,12 @@ namespace ApplicationTracker.Utilities
     {
         public void ProcTimer(HashSet<string> exclusionList, ObservableCollection<ProcessWrapper> runningProcs, IdleDetect idleDetect, ActiveWindow active)
         {
-            //ActiveWindowHelper helper = new ActiveWindowHelper();    
-
-            //Process[] processes = Process.GetProcesses();
-
             GetRunningProcs(exclusionList, runningProcs);
 
             IdleTimeInfo idleTimeInfo = idleDetect.GetIdleTimeInfo(new IdleDetectHelper());
 
             if (idleTimeInfo.IdleTime.TotalMinutes <= 1)
             {
-                //IActiveWindowHelper helper = new ActiveWindowHelper();
                 UpdateRunningProcs(runningProcs, active);
             }
 
@@ -71,7 +61,6 @@ namespace ApplicationTracker.Utilities
 
         public virtual void UpdateRunningProcs(ObservableCollection<ProcessWrapper> runningProcs, ActiveWindow window)
         {
-
             foreach (ProcessWrapper proc in runningProcs)
             {
                 if (window.IsActive(proc.ProcessName))

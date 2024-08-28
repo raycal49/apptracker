@@ -4,12 +4,7 @@ using ApplicationTracker.Utilities;
 using LiveChartsCore.SkiaSharpView.Painting;
 using LiveChartsCore.SkiaSharpView;
 using SkiaSharp;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ApplicationTracker.View_Models
 {
@@ -33,9 +28,9 @@ namespace ApplicationTracker.View_Models
             return ViewModelUtils.ConvertProcDataToProcWrapper(dailyTotal);
         }
 
-        private ObservableCollection<PieSeries<double>> _pieSeries;
+        private ObservableCollection<PieSeries<double>>? _pieSeries;
 
-        public ObservableCollection<PieSeries<double>> PieSeries
+        public ObservableCollection<PieSeries<double>>? PieSeries
         {
             get => _pieSeries;
 
@@ -104,6 +99,7 @@ namespace ApplicationTracker.View_Models
 
             for (int i = 0; i < pieData.Count; ++i)
             {
+                // We perform the lookups here for better tooltip performance
                 var process = pieData[i];
                 var duration = durations[i];
 
@@ -160,6 +156,4 @@ namespace ApplicationTracker.View_Models
             return piechart;
         }
     }
-
-  
 }

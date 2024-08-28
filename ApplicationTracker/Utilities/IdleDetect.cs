@@ -13,24 +13,17 @@ namespace ApplicationTracker.Utilities
 {
     public class IdleDetect
     {
-        //[DllImport("user32.dll")]
-        //public static extern bool GetLastInputInfo(ref LASTINPUTINFO plii);
-
         public virtual IdleTimeInfo GetIdleTimeInfo(IIdleDetectHelper idleDetectHelper)
         {
             int systemUptime = idleDetectHelper.GetSystemUptime(),
                 lastInputTicks = 0,
                 idleTicks = 0;
 
-            //LASTINPUTINFO lastInputInfo = new LASTINPUTINFO();//
-            //lastInputInfo.cbSize = (uint)Marshal.SizeOf(lastInputInfo);
-            //lastInputInfo.dwTime = 0;
-
-            if (idleDetectHelper.TryWrapperGetLastInputInfo(out LASTINPUTINFO lastInputInfo))//
+            if (idleDetectHelper.TryWrapperGetLastInputInfo(out LASTINPUTINFO lastInputInfo))
             {
                 lastInputTicks = (int)lastInputInfo.dwTime;
 
-                idleTicks = systemUptime - lastInputTicks; // 13-7=6
+                idleTicks = systemUptime - lastInputTicks;
             }
 
             IdleTimeInfo idleTime = new IdleTimeInfo(idleTicks, systemUptime);
@@ -39,13 +32,13 @@ namespace ApplicationTracker.Utilities
         }
     }
 
-    public class IdleTimeInfo//
+    public class IdleTimeInfo
     {
         public IdleTimeInfo(int idleTicks, int systemUptime)
         {
             LastInputTime = DateTime.Now.AddMilliseconds(-1 * idleTicks);
             IdleTime = new TimeSpan(0, 0, 0, 0, idleTicks);
-            SystemUptimeMilliseconds = systemUptime;//
+            SystemUptimeMilliseconds = systemUptime;
         }
 
         public DateTime LastInputTime { get; internal set; }

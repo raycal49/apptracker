@@ -1,11 +1,6 @@
-﻿using ApplicationTracker.Models;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
+using ApplicationTracker.Models;
 
 namespace ApplicationTracker.Repositories
 {
@@ -13,12 +8,10 @@ namespace ApplicationTracker.Repositories
     {
         public ProcessDataRepository(DbContext context) : base(context)
         {
-
         }
 
         public new IEnumerable<ProcessData> Find(Expression<Func<ProcessData, bool>> predicate)
         {
-            //return Context.Set<ProcessTableEntry>().Where(predicate).ToList();
             return Context.Set<ProcessData>().Where(predicate).ToList();
         }
 

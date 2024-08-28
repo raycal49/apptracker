@@ -1,14 +1,5 @@
-﻿using System;
-using NUnit;
-using NSubstitute;
+﻿using NSubstitute;
 using System.Runtime.InteropServices;
-using System.Diagnostics;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using NUnit.Framework;
-using ApplicationTracker.Models;
 using ApplicationTracker.Utilities;
 
 namespace ApplicationTracker.UnitTests
