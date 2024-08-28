@@ -3,16 +3,27 @@
   "WorkspaceRootPath": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{41158769-EFA2-491A-BE9C-B13D9D92936E}|ApplicationTracker.UnitTests\\ApplicationTracker.UnitTests.csproj|c:\\users\\ray\\source\\repos\\applicationtracker\\applicationtracker.unittests\\activewindowtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41158769-EFA2-491A-BE9C-B13D9D92936E}|ApplicationTracker.UnitTests\\ApplicationTracker.UnitTests.csproj|solutionrelative:applicationtracker.unittests\\activewindowtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{41158769-EFA2-491A-BE9C-B13D9D92936E}|ApplicationTracker.UnitTests\\ApplicationTracker.UnitTests.csproj|c:\\users\\ray\\source\\repos\\applicationtracker\\applicationtracker.unittests\\applicationtracker.unittests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{41158769-EFA2-491A-BE9C-B13D9D92936E}|ApplicationTracker.UnitTests\\ApplicationTracker.UnitTests.csproj|solutionrelative:applicationtracker.unittests\\applicationtracker.unittests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|c:\\users\\ray\\source\\repos\\applicationtracker\\applicationtracker\\applicationtracker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|solutionrelative:applicationtracker\\applicationtracker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41158769-EFA2-491A-BE9C-B13D9D92936E}|ApplicationTracker.UnitTests\\ApplicationTracker.UnitTests.csproj|c:\\users\\ray\\source\\repos\\applicationtracker\\applicationtracker.unittests\\prochelpertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41158769-EFA2-491A-BE9C-B13D9D92936E}|ApplicationTracker.UnitTests\\ApplicationTracker.UnitTests.csproj|solutionrelative:applicationtracker.unittests\\prochelpertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{41158769-EFA2-491A-BE9C-B13D9D92936E}|ApplicationTracker.UnitTests\\ApplicationTracker.UnitTests.csproj|c:\\users\\ray\\source\\repos\\applicationtracker\\applicationtracker.unittests\\idledetecttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{41158769-EFA2-491A-BE9C-B13D9D92936E}|ApplicationTracker.UnitTests\\ApplicationTracker.UnitTests.csproj|solutionrelative:applicationtracker.unittests\\idledetecttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{41158769-EFA2-491A-BE9C-B13D9D92936E}|ApplicationTracker.UnitTests\\ApplicationTracker.UnitTests.csproj|c:\\users\\ray\\source\\repos\\applicationtracker\\applicationtracker.unittests\\prochelpertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41158769-EFA2-491A-BE9C-B13D9D92936E}|ApplicationTracker.UnitTests\\ApplicationTracker.UnitTests.csproj|solutionrelative:applicationtracker.unittests\\prochelpertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{41158769-EFA2-491A-BE9C-B13D9D92936E}|ApplicationTracker.UnitTests\\ApplicationTracker.UnitTests.csproj|c:\\users\\ray\\source\\repos\\applicationtracker\\applicationtracker.unittests\\activewindowtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41158769-EFA2-491A-BE9C-B13D9D92936E}|ApplicationTracker.UnitTests\\ApplicationTracker.UnitTests.csproj|solutionrelative:applicationtracker.unittests\\activewindowtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|c:\\users\\ray\\source\\repos\\applicationtracker\\applicationtracker\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -107,10 +118,6 @@
       "RelativeMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|solutionrelative:applicationtracker\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|c:\\users\\ray\\source\\repos\\applicationtracker\\applicationtracker\\applicationtracker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{68FC2F05-02AD-4C21-827F-F088F53D2E92}|ApplicationTracker\\ApplicationTracker.csproj|solutionrelative:applicationtracker\\applicationtracker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/TrackDatabase/True/SqlTable/dbo.ProcessTable.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     }
   ],
@@ -126,84 +133,67 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ActiveWindowTests.cs",
-              "DocumentMoniker": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker.UnitTests\\ActiveWindowTests.cs",
-              "RelativeDocumentMoniker": "ApplicationTracker.UnitTests\\ActiveWindowTests.cs",
-              "ToolTip": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker.UnitTests\\ActiveWindowTests.cs",
-              "RelativeToolTip": "ApplicationTracker.UnitTests\\ActiveWindowTests.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwC4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T01:36:45.047Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IdleDetectTests.cs",
-              "DocumentMoniker": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker.UnitTests\\IdleDetectTests.cs",
-              "RelativeDocumentMoniker": "ApplicationTracker.UnitTests\\IdleDetectTests.cs",
-              "ToolTip": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker.UnitTests\\IdleDetectTests.cs",
-              "RelativeToolTip": "ApplicationTracker.UnitTests\\IdleDetectTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T01:36:36.133Z",
+              "Title": "ApplicationTracker.UnitTests.csproj",
+              "DocumentMoniker": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker.UnitTests\\ApplicationTracker.UnitTests.csproj",
+              "RelativeDocumentMoniker": "ApplicationTracker.UnitTests\\ApplicationTracker.UnitTests.csproj",
+              "ToolTip": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker.UnitTests\\ApplicationTracker.UnitTests.csproj",
+              "RelativeToolTip": "ApplicationTracker.UnitTests\\ApplicationTracker.UnitTests.csproj",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-28T01:49:03.742Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAFgJAAAAAAAAAAAUwGsJAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-08-28T01:41:32.747Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ActiveWindowTests.cs",
+              "DocumentMoniker": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker.UnitTests\\ActiveWindowTests.cs",
+              "RelativeDocumentMoniker": "ApplicationTracker.UnitTests\\ActiveWindowTests.cs",
+              "ToolTip": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker.UnitTests\\ActiveWindowTests.cs",
+              "RelativeToolTip": "ApplicationTracker.UnitTests\\ActiveWindowTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T01:36:45.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IdleDetectTests.cs",
+              "DocumentMoniker": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker.UnitTests\\IdleDetectTests.cs",
+              "RelativeDocumentMoniker": "ApplicationTracker.UnitTests\\IdleDetectTests.cs",
+              "ToolTip": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker.UnitTests\\IdleDetectTests.cs",
+              "RelativeToolTip": "ApplicationTracker.UnitTests\\IdleDetectTests.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwDAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T01:36:36.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "ProcHelperTests.cs",
               "DocumentMoniker": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker.UnitTests\\ProcHelperTests.cs",
               "RelativeDocumentMoniker": "ApplicationTracker.UnitTests\\ProcHelperTests.cs",
               "ToolTip": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker.UnitTests\\ProcHelperTests.cs",
               "RelativeToolTip": "ApplicationTracker.UnitTests\\ProcHelperTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAUwHsAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T01:36:24.666Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-28T01:36:24.666Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ViewModelBase.cs",
-              "DocumentMoniker": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\View Models\\ViewModelBase.cs",
-              "RelativeDocumentMoniker": "ApplicationTracker\\View Models\\ViewModelBase.cs",
-              "ToolTip": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\View Models\\ViewModelBase.cs",
-              "RelativeToolTip": "ApplicationTracker\\View Models\\ViewModelBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T01:32:44.969Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ViewModelUtils.cs",
-              "DocumentMoniker": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\Utilities\\ViewModelUtils.cs",
-              "RelativeDocumentMoniker": "ApplicationTracker\\Utilities\\ViewModelUtils.cs",
-              "ToolTip": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\Utilities\\ViewModelUtils.cs",
-              "RelativeToolTip": "ApplicationTracker\\Utilities\\ViewModelUtils.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T01:30:18.96Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ProcHelper.cs",
-              "DocumentMoniker": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\Utilities\\ProcHelper.cs",
-              "RelativeDocumentMoniker": "ApplicationTracker\\Utilities\\ProcHelper.cs",
-              "ToolTip": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\Utilities\\ProcHelper.cs",
-              "RelativeToolTip": "ApplicationTracker\\Utilities\\ProcHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T01:29:55.134Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "IdleDetectHelper.cs",
               "DocumentMoniker": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\Utilities\\IdleDetectHelper.cs",
               "RelativeDocumentMoniker": "ApplicationTracker\\Utilities\\IdleDetectHelper.cs",
@@ -211,12 +201,11 @@
               "RelativeToolTip": "ApplicationTracker\\Utilities\\IdleDetectHelper.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T01:29:19.114Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-28T01:29:19.114Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "ActiveWindowHelper.cs",
               "DocumentMoniker": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\Utilities\\ActiveWindowHelper.cs",
               "RelativeDocumentMoniker": "ApplicationTracker\\Utilities\\ActiveWindowHelper.cs",
@@ -224,12 +213,48 @@
               "RelativeToolTip": "ApplicationTracker\\Utilities\\ActiveWindowHelper.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T01:25:58.559Z",
+              "WhenOpened": "2024-08-28T01:25:58.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApplicationTracker.csproj",
+              "DocumentMoniker": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\ApplicationTracker.csproj",
+              "RelativeDocumentMoniker": "ApplicationTracker\\ApplicationTracker.csproj",
+              "ToolTip": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\ApplicationTracker.csproj",
+              "RelativeToolTip": "ApplicationTracker\\ApplicationTracker.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-15T15:46:56.568Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ProcHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\Utilities\\ProcHelper.cs",
+              "RelativeDocumentMoniker": "ApplicationTracker\\Utilities\\ProcHelper.cs",
+              "ToolTip": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\Utilities\\ProcHelper.cs",
+              "RelativeToolTip": "ApplicationTracker\\Utilities\\ProcHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T01:29:55.134Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "ViewModelUtils.cs",
+              "DocumentMoniker": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\Utilities\\ViewModelUtils.cs",
+              "RelativeDocumentMoniker": "ApplicationTracker\\Utilities\\ViewModelUtils.cs",
+              "ToolTip": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\Utilities\\ViewModelUtils.cs",
+              "RelativeToolTip": "ApplicationTracker\\Utilities\\ViewModelUtils.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T01:30:18.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "ActiveWindow.cs",
               "DocumentMoniker": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\Utilities\\ActiveWindow.cs",
               "RelativeDocumentMoniker": "ApplicationTracker\\Utilities\\ActiveWindow.cs",
@@ -237,12 +262,11 @@
               "RelativeToolTip": "ApplicationTracker\\Utilities\\ActiveWindow.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T01:25:52.122Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-28T01:25:52.122Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "IIdleDetectHelper.cs",
               "DocumentMoniker": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\Utilities\\IIdleDetectHelper.cs",
               "RelativeDocumentMoniker": "ApplicationTracker\\Utilities\\IIdleDetectHelper.cs",
@@ -250,12 +274,23 @@
               "RelativeToolTip": "ApplicationTracker\\Utilities\\IIdleDetectHelper.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T01:22:32.591Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-28T01:22:32.591Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
+              "Title": "ViewModelBase.cs",
+              "DocumentMoniker": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\View Models\\ViewModelBase.cs",
+              "RelativeDocumentMoniker": "ApplicationTracker\\View Models\\ViewModelBase.cs",
+              "ToolTip": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\View Models\\ViewModelBase.cs",
+              "RelativeToolTip": "ApplicationTracker\\View Models\\ViewModelBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T01:32:44.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "DayViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\View Models\\DayViewModel.cs",
               "RelativeDocumentMoniker": "ApplicationTracker\\View Models\\DayViewModel.cs",
@@ -263,12 +298,11 @@
               "RelativeToolTip": "ApplicationTracker\\View Models\\DayViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-15T15:35:35.593Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-15T15:35:35.593Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\App.xaml.cs",
               "RelativeDocumentMoniker": "ApplicationTracker\\App.xaml.cs",
@@ -276,12 +310,11 @@
               "RelativeToolTip": "ApplicationTracker\\App.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-15T15:28:17.455Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-15T15:28:17.455Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "MainViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\View Models\\MainViewModel.cs",
               "RelativeDocumentMoniker": "ApplicationTracker\\View Models\\MainViewModel.cs",
@@ -289,12 +322,11 @@
               "RelativeToolTip": "ApplicationTracker\\View Models\\MainViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-15T15:27:50.148Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-15T15:27:50.148Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "WeekViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\View Models\\WeekViewModel.cs",
               "RelativeDocumentMoniker": "ApplicationTracker\\View Models\\WeekViewModel.cs",
@@ -302,12 +334,11 @@
               "RelativeToolTip": "ApplicationTracker\\View Models\\WeekViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-15T19:39:10.886Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-15T19:39:10.886Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "IActiveWindowHelper.cs",
               "DocumentMoniker": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\Utilities\\IActiveWindowHelper.cs",
               "RelativeDocumentMoniker": "ApplicationTracker\\Utilities\\IActiveWindowHelper.cs",
@@ -315,12 +346,11 @@
               "RelativeToolTip": "ApplicationTracker\\Utilities\\IActiveWindowHelper.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T01:28:17.889Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-28T01:28:17.889Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "IdleDetect.cs",
               "DocumentMoniker": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\Utilities\\IdleDetect.cs",
               "RelativeDocumentMoniker": "ApplicationTracker\\Utilities\\IdleDetect.cs",
@@ -328,12 +358,11 @@
               "RelativeToolTip": "ApplicationTracker\\Utilities\\IdleDetect.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T01:28:33.038Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-28T01:28:33.038Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "UnitOfWork.cs",
               "DocumentMoniker": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\Repositories\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "ApplicationTracker\\Repositories\\UnitOfWork.cs",
@@ -341,12 +370,11 @@
               "RelativeToolTip": "ApplicationTracker\\Repositories\\UnitOfWork.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T01:25:48.254Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-28T01:25:48.254Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "Repository.cs",
               "DocumentMoniker": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\Repositories\\Repository.cs",
               "RelativeDocumentMoniker": "ApplicationTracker\\Repositories\\Repository.cs",
@@ -354,12 +382,11 @@
               "RelativeToolTip": "ApplicationTracker\\Repositories\\Repository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T01:25:41.628Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-28T01:25:41.628Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "IUnitOfWork.cs",
               "DocumentMoniker": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\Repositories\\IUnitOfWork.cs",
               "RelativeDocumentMoniker": "ApplicationTracker\\Repositories\\IUnitOfWork.cs",
@@ -367,12 +394,11 @@
               "RelativeToolTip": "ApplicationTracker\\Repositories\\IUnitOfWork.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T01:25:02.977Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-28T01:25:02.977Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "IProcessDataRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\Repositories\\IProcessDataRepository.cs",
               "RelativeDocumentMoniker": "ApplicationTracker\\Repositories\\IProcessDataRepository.cs",
@@ -380,12 +406,11 @@
               "RelativeToolTip": "ApplicationTracker\\Repositories\\IProcessDataRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T01:24:30.796Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-28T01:24:30.796Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\Repositories\\IRepository.cs",
               "RelativeDocumentMoniker": "ApplicationTracker\\Repositories\\IRepository.cs",
@@ -393,12 +418,11 @@
               "RelativeToolTip": "ApplicationTracker\\Repositories\\IRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T01:24:56.091Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-28T01:24:56.091Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "ProcessDataRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\Repositories\\ProcessDataRepository.cs",
               "RelativeDocumentMoniker": "ApplicationTracker\\Repositories\\ProcessDataRepository.cs",
@@ -406,12 +430,11 @@
               "RelativeToolTip": "ApplicationTracker\\Repositories\\ProcessDataRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T01:25:28.312Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-28T01:25:28.312Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "TrackContext.cs",
               "DocumentMoniker": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\Models\\TrackContext.cs",
               "RelativeDocumentMoniker": "ApplicationTracker\\Models\\TrackContext.cs",
@@ -419,67 +442,55 @@
               "RelativeToolTip": "ApplicationTracker\\Models\\TrackContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T01:24:24.99Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-28T01:24:24.99Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "ProcessWrapper.cs",
               "DocumentMoniker": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\Models\\ProcessWrapper.cs",
               "RelativeDocumentMoniker": "ApplicationTracker\\Models\\ProcessWrapper.cs",
               "ToolTip": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\Models\\ProcessWrapper.cs",
               "RelativeToolTip": "ApplicationTracker\\Models\\ProcessWrapper.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACMAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAIBJwCMAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T01:23:53.177Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-28T01:23:53.177Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "ProcessData.cs",
               "DocumentMoniker": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\Models\\ProcessData.cs",
               "RelativeDocumentMoniker": "ApplicationTracker\\Models\\ProcessData.cs",
               "ToolTip": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\Models\\ProcessData.cs",
               "RelativeToolTip": "ApplicationTracker\\Models\\ProcessData.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAA5wAoAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA1wAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T01:23:42.79Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-28T01:23:42.79Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\MainWindow.xaml",
               "RelativeDocumentMoniker": "ApplicationTracker\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\MainWindow.xaml",
               "RelativeToolTip": "ApplicationTracker\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-15T15:27:59.92Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-15T15:27:59.92Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "ApplicationTracker.csproj",
-              "DocumentMoniker": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\ApplicationTracker.csproj",
-              "RelativeDocumentMoniker": "ApplicationTracker\\ApplicationTracker.csproj",
-              "ToolTip": "C:\\Users\\Ray\\source\\repos\\ApplicationTracker\\ApplicationTracker\\ApplicationTracker.csproj",
-              "RelativeToolTip": "ApplicationTracker\\ApplicationTracker.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-15T15:46:56.568Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "dbo.ProcessTable.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/TrackDatabase/True/SqlTable/dbo.ProcessTable.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/TrackDatabase/True/SqlTable/dbo.ProcessTable.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
               "WhenOpened": "2024-08-15T15:27:24.534Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Bookmark",

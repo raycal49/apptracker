@@ -1,5 +1,6 @@
 ﻿using NSubstitute;
 using ApplicationTracker.Utilities;
+using ApplicationTracker.Models;
 
 namespace ApplicationTracker.UnitTests
 {
@@ -36,7 +37,7 @@ namespace ApplicationTracker.UnitTests
                         return 1;
                     });
 
-            fakeHelper.WrapperGetProcessById(456).Returns(new MyProcess { ProcessName = "test2" });
+            fakeHelper.WrapperGetProcessById(456).Returns(new ProcessWrapper { ProcessName = "test2" });
 
             // act
             var result = activeWindow.IsActive("test2");
@@ -61,7 +62,7 @@ namespace ApplicationTracker.UnitTests
                         return 1;
                     });
 
-            fakeHelper.WrapperGetProcessById(456).Returns(new MyProcess { ProcessName = "fakeName" });
+            fakeHelper.WrapperGetProcessById(456).Returns(new ProcessWrapper { ProcessName = "fakeName" });
 
             // act
             var result = activeWindow.IsActive("test2");

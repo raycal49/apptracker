@@ -1,4 +1,5 @@
-﻿using ApplicationTracker.Utilities;
+﻿using ApplicationTracker.Models;
+using ApplicationTracker.Utilities;
 using NSubstitute;
 using System.Collections.ObjectModel;
 
@@ -17,10 +18,10 @@ namespace ApplicationTracker.UnitTests
 
             fakeActiveWindow.IsActive(Arg.Is("test")).Returns(true);
 
-            ObservableCollection<MyProcess> runningProcs = new ObservableCollection<MyProcess>();
+            ObservableCollection<ProcessWrapper> runningProcs = new ObservableCollection<ProcessWrapper>();
 
             runningProcs.Add(
-                new MyProcess()
+                new ProcessWrapper()
                 {
                     ProcessName = "test",
                     ProcessTime = TimeSpan.FromSeconds(10),
@@ -28,7 +29,7 @@ namespace ApplicationTracker.UnitTests
                 });
 
             runningProcs.Add(
-                new MyProcess()
+                new ProcessWrapper()
                 {
                     ProcessName = "test2",
                     ProcessTime = TimeSpan.FromSeconds(15),
@@ -55,10 +56,10 @@ namespace ApplicationTracker.UnitTests
 
             fakeActiveWindow.IsActive(Arg.Any<string>()).Returns(false);
 
-            ObservableCollection<MyProcess> runningProcs = new ObservableCollection<MyProcess>();
+            ObservableCollection<ProcessWrapper> runningProcs = new ObservableCollection<ProcessWrapper>();
 
             runningProcs.Add(
-                new MyProcess()
+                new ProcessWrapper()
                 {
                     ProcessName = "test",
                     ProcessTime = TimeSpan.FromSeconds(10),
@@ -66,7 +67,7 @@ namespace ApplicationTracker.UnitTests
                 });
 
             runningProcs.Add(
-                new MyProcess()
+                new ProcessWrapper()
                 {
                     ProcessName = "test",
                     ProcessTime = TimeSpan.FromSeconds(15),
@@ -93,7 +94,7 @@ namespace ApplicationTracker.UnitTests
             var fakeIdleDetect = Substitute.ForPartsOf<IdleDetect>();
             var fakeActiveWindow = Substitute.ForPartsOf<ActiveWindow>();
 
-            fakeProcHelper.When(x => x.GetRunningProcs(Arg.Any<HashSet<string>>(), Arg.Any<ObservableCollection<MyProcess>>())).DoNotCallBase();
+            fakeProcHelper.When(x => x.GetRunningProcs(Arg.Any<HashSet<string>>(), Arg.Any<ObservableCollection<ProcessWrapper>>())).DoNotCallBase();
             fakeIdleDetect.GetIdleTimeInfo(Arg.Any<IIdleDetectHelper>()).Returns(new IdleTimeInfo(0, 0));
 
             fakeActiveWindow.IsActive(Arg.Is("test")).Returns(true);
@@ -109,10 +110,10 @@ namespace ApplicationTracker.UnitTests
                 "updatechecker",
             };
 
-            ObservableCollection<MyProcess> runningProcs = new ObservableCollection<MyProcess>();
+            ObservableCollection<ProcessWrapper> runningProcs = new ObservableCollection<ProcessWrapper>();
 
             runningProcs.Add(
-                new MyProcess()
+                new ProcessWrapper()
                 {
                     ProcessName = "test",
                     ProcessTime = TimeSpan.FromSeconds(10),
@@ -120,7 +121,7 @@ namespace ApplicationTracker.UnitTests
                 });
 
             runningProcs.Add(
-                new MyProcess()
+                new ProcessWrapper()
                 {
                     ProcessName = "test2",
                     ProcessTime = TimeSpan.FromSeconds(15),
