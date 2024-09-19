@@ -7,6 +7,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Data;
+using ApplicationTracker.Utilities.Interfaces;
 
 // Dispose of IntPtr peoperly.
 namespace ApplicationTracker.Utilities

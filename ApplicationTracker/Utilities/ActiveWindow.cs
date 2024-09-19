@@ -1,4 +1,5 @@
 ﻿using ApplicationTracker.Models;
+using ApplicationTracker.Utilities.Interfaces;
 
 namespace ApplicationTracker.Utilities
 {

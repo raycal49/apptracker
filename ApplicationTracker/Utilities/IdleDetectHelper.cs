@@ -1,4 +1,5 @@
 ﻿using System.Runtime.InteropServices;
+using ApplicationTracker.Utilities.Interfaces;
 
 namespace ApplicationTracker.Utilities
 {

@@ -1,6 +1,6 @@
 ﻿using ApplicationTracker.Models;
 
-namespace ApplicationTracker.Utilities
+namespace ApplicationTracker.Utilities.Interfaces
 {
     public interface IActiveWindowHelper
     {

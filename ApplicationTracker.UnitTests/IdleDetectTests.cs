@@ -1,6 +1,7 @@
 ﻿using NSubstitute;
 using System.Runtime.InteropServices;
 using ApplicationTracker.Utilities;
+using ApplicationTracker.Utilities.Interfaces;
 
 namespace ApplicationTracker.UnitTests
 {

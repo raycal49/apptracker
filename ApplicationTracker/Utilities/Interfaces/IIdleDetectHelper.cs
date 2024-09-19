@@ -1,5 +1,4 @@
-﻿
-namespace ApplicationTracker.Utilities
+﻿namespace ApplicationTracker.Utilities.Interfaces
 {
     public interface IIdleDetectHelper
     {

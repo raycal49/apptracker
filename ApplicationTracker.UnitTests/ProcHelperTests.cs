@@ -1,5 +1,6 @@
 ﻿using ApplicationTracker.Models;
 using ApplicationTracker.Utilities;
+using ApplicationTracker.Utilities.Interfaces;
 using NSubstitute;
 using System.Collections.ObjectModel;
 
