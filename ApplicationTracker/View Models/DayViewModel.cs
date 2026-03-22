@@ -13,13 +13,14 @@ namespace ApplicationTracker.View_Models
         public DayViewModel()
         {
             DailyTotal = new ObservableCollection<ProcessWrapper>(GetDailyTotal());
+            PieSeries = InitializePieChart(DailyTotal);
         }
 
         public ObservableCollection<ProcessWrapper> DailyTotal { get; set; }
 
         public IEnumerable<ProcessWrapper> GetDailyTotal()
         {
-            IUnitOfWork uow = new UnitOfWork(new TrackContext());
+            using IUnitOfWork uow = new UnitOfWork(new TrackContext());
 
             DateTime today = DateTime.Today;
 
