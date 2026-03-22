@@ -36,13 +36,33 @@ namespace ApplicationTracker.View_Models
             }
         }
 
-        public Axis[]? XAxes { get; set; }
+        private Axis[]? _xAxes;
 
-        public Axis[]? YAxes { get; set; }
+        public Axis[]? XAxes
+        {
+            get => _xAxes;
+            set
+            {
+                _xAxes = value;
+                OnPropertyChanged();
+            }
+        }
+
+        private Axis[]? _yAxes;
+
+        public Axis[]? YAxes
+        {
+            get => _yAxes;
+            set
+            {
+                _yAxes = value;
+                OnPropertyChanged();
+            }
+        }
 
         private IEnumerable<ProcessWrapper> GetWeeklyTotal()
         {
-            IUnitOfWork uow = new UnitOfWork(new TrackContext());
+            using IUnitOfWork uow = new UnitOfWork(new TrackContext());
 
             CultureInfo myCI = new CultureInfo("en-US");
             Calendar myCal = myCI.Calendar;

@@ -58,6 +58,11 @@ namespace ApplicationTimerApp
             weekTimer.AutoReset = true;
             weekTimer.Enabled = true;
 
+            System.Timers.Timer monthTimer = new System.Timers.Timer(60000);
+            monthTimer.Elapsed += (s, e) => mainVm.MonthVm.Refresh();
+            monthTimer.AutoReset = true;
+            monthTimer.Enabled = true;
+
             base.OnStartup(e);
         }
     }

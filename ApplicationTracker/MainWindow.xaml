@@ -53,6 +53,122 @@
                     <lvc:CartesianChart Series="{Binding WeekVm.WeeklyChartSeries}"  TooltipFindingStrategy="Automatic" XAxes="{Binding WeekVm.XAxes}" YAxes="{Binding WeekVm.YAxes}" />
                 </Grid>
             </TabItem>
+            <TabItem Header="This Month's Usage">
+                <Grid Margin="16">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="2*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="0" Margin="0,0,0,12">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <Button
+                            Grid.Column="0"
+                            Padding="12,6"
+                            Command="{Binding MonthVm.PreviousMonthCommand}"
+                            Content="◀ Previous" />
+
+                        <TextBlock
+                            Grid.Column="1"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            FontSize="22"
+                            FontWeight="SemiBold"
+                            Text="{Binding MonthVm.SelectedMonthLabel}" />
+
+                        <Button
+                            Grid.Column="2"
+                            Margin="8,0,0,0"
+                            Padding="12,6"
+                            Command="{Binding MonthVm.CurrentMonthCommand}"
+                            Content="Current Month" />
+
+                        <Button
+                            Grid.Column="3"
+                            Margin="8,0,0,0"
+                            Padding="12,6"
+                            Command="{Binding MonthVm.NextMonthCommand}"
+                            Content="Next ▶" />
+                    </Grid>
+
+                    <UniformGrid Grid.Row="1" Margin="0,0,0,12" Columns="4">
+                        <Border Margin="0,0,8,0" Padding="12" Background="#FFEFF4FB" CornerRadius="8">
+                            <StackPanel>
+                                <TextBlock FontWeight="SemiBold" Text="Total Tracked Time" />
+                                <TextBlock Margin="0,8,0,0" FontSize="18" Text="{Binding MonthVm.TotalTrackedTimeLabel}" />
+                            </StackPanel>
+                        </Border>
+                        <Border Margin="0,0,8,0" Padding="12" Background="#FFF5F0FF" CornerRadius="8">
+                            <StackPanel>
+                                <TextBlock FontWeight="SemiBold" Text="Top App" />
+                                <TextBlock Margin="0,8,0,0" FontSize="18" Text="{Binding MonthVm.TopAppName}" />
+                                <TextBlock Foreground="DimGray" Text="{Binding MonthVm.TopAppTimeLabel}" />
+                            </StackPanel>
+                        </Border>
+                        <Border Margin="0,0,8,0" Padding="12" Background="#FFFFF7E8" CornerRadius="8">
+                            <StackPanel>
+                                <TextBlock FontWeight="SemiBold" Text="Busiest Day" />
+                                <TextBlock Margin="0,8,0,0" FontSize="18" Text="{Binding MonthVm.BusiestDayLabel}" />
+                            </StackPanel>
+                        </Border>
+                        <Border Padding="12" Background="#FFF2FBF3" CornerRadius="8">
+                            <StackPanel>
+                                <TextBlock FontWeight="SemiBold" Text="Busiest Hour / Distinct Apps" />
+                                <TextBlock Margin="0,8,0,0" FontSize="18" Text="{Binding MonthVm.BusiestHourLabel}" />
+                                <TextBlock Foreground="DimGray" Text="{Binding MonthVm.DistinctAppsCount, StringFormat='{}{0} apps'}" />
+                            </StackPanel>
+                        </Border>
+                    </UniformGrid>
+
+                    <GroupBox Grid.Row="2" Header="Daily Totals Across the Month" Margin="0,0,0,12">
+                        <lvc:CartesianChart
+                            Margin="8"
+                            Series="{Binding MonthVm.DailyTotalsSeries}"
+                            XAxes="{Binding MonthVm.DailyTotalsXAxes}"
+                            YAxes="{Binding MonthVm.DailyTotalsYAxes}" />
+                    </GroupBox>
+
+                    <Grid Grid.Row="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <GroupBox Grid.Column="0" Header="Top Apps This Month" Margin="0,0,8,0">
+                            <ListView ItemsSource="{Binding MonthVm.MonthlyTopProcesses}" Margin="8">
+                                <ListView.View>
+                                    <GridView>
+                                        <GridViewColumn
+                                            Width="180"
+                                            DisplayMemberBinding="{Binding ProcessName}"
+                                            Header="App" />
+                                        <GridViewColumn
+                                            Width="120"
+                                            DisplayMemberBinding="{Binding ProcessTime}"
+                                            Header="Usage Time" />
+                                    </GridView>
+                                </ListView.View>
+                            </ListView>
+                        </GroupBox>
+
+                        <GroupBox Grid.Column="1" Header="Time of Day" Margin="8,0,0,0">
+                            <lvc:CartesianChart
+                                Margin="8"
+                                Series="{Binding MonthVm.TimeOfDaySeries}"
+                                XAxes="{Binding MonthVm.TimeOfDayXAxes}"
+                                YAxes="{Binding MonthVm.TimeOfDayYAxes}" />
+                        </GroupBox>
+                    </Grid>
+                </Grid>
+            </TabItem>
         </TabControl>
     </Grid>
 
