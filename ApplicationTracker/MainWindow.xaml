@@ -53,6 +53,38 @@
                     <lvc:CartesianChart Series="{Binding WeekVm.WeeklyChartSeries}"  TooltipFindingStrategy="Automatic" XAxes="{Binding WeekVm.XAxes}" YAxes="{Binding WeekVm.YAxes}" />
                 </Grid>
             </TabItem>
+            <TabItem Header="This Month's Usage">
+                <Grid Margin="16">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <lvc:CartesianChart
+                        Grid.Row="0"
+                        Margin="0,0,0,12"
+                        Series="{Binding MonthVm.MonthlyChartSeries}"
+                        XAxes="{Binding MonthVm.XAxes}"
+                        YAxes="{Binding MonthVm.YAxes}" />
+
+                    <ListView
+                        Grid.Row="1"
+                        ItemsSource="{Binding MonthVm.MonthlyTopProcesses}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn
+                                    Width="180"
+                                    DisplayMemberBinding="{Binding ProcessName}"
+                                    Header="Top Apps This Month" />
+                                <GridViewColumn
+                                    Width="120"
+                                    DisplayMemberBinding="{Binding ProcessTime}"
+                                    Header="Usage Time" />
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </Grid>
+            </TabItem>
         </TabControl>
     </Grid>
 
